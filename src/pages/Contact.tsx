@@ -147,47 +147,6 @@ const Contact = () => {
                 </form>
               </CardContent>
             </Card>
-
-              <Card className="border-0 shadow-lg bg-author-bg-section">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-serif font-bold text-author-primary mb-4">
-                    Let's Collaborate
-                  </h3>
-
-                  <p className="text-author-text-light leading-relaxed mb-6">
-                    I'm always interested in new translation projects, literary
-                    collaborations, and opportunities to share the beauty of
-                    Malayalam literature with global audiences.
-                  </p>
-
-                  <div className="space-y-3 text-sm">
-                    <div className="flex items-center">
-                      <div className="w-2 h-2 bg-author-accent rounded-full mr-3"></div>
-                      <span className="text-author-primary">
-                        Publishing house partnerships
-                      </span>
-                    </div>
-                    <div className="flex items-center">
-                      <div className="w-2 h-2 bg-author-accent rounded-full mr-3"></div>
-                      <span className="text-author-primary">
-                        Literary festival invitations
-                      </span>
-                    </div>
-                    <div className="flex items-center">
-                      <div className="w-2 h-2 bg-author-accent rounded-full mr-3"></div>
-                      <span className="text-author-primary">
-                        Translation workshops
-                      </span>
-                    </div>
-                    <div className="flex items-center">
-                      <div className="w-2 h-2 bg-author-accent rounded-full mr-3"></div>
-                      <span className="text-author-primary">
-                        Media interviews
-                      </span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
