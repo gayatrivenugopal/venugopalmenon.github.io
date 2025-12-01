@@ -425,16 +425,6 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="border-author-primary text-author-primary hover:bg-author-primary hover:text-white font-raleway uppercase tracking-wider"
-            >
-              <Link to="/articles">View All Articles</Link>
-            </Button>
-          </div>
         </div>
       </section>
 
