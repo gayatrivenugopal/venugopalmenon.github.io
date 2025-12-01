@@ -456,7 +456,7 @@ const Index = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-author-primary px-8 py-3 text-lg font-raleway uppercase tracking-wider"
+              className="border-white text-black hover:text-author-primary px-8 py-3 text-lg font-raleway uppercase tracking-wider"
             >
               <Link to="/about">Learn More</Link>
             </Button>
