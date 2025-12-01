@@ -148,61 +148,6 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            {/* Contact Information */}
-            <div className="space-y-8">
-              <Card className="border-0 shadow-lg">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-serif font-bold text-author-primary mb-6">
-                    Contact Information
-                  </h3>
-
-                  <div className="space-y-6">
-                    <div className="flex items-start space-x-4">
-                      <Mail className="h-6 w-6 text-author-accent mt-1" />
-                      <div>
-                        <h4 className="font-raleway font-semibold text-author-primary mb-1">
-                          Email
-                        </h4>
-                        <p className="text-author-text-light">
-                          venugopal@example.com
-                        </p>
-                        <p className="text-sm text-author-text-light mt-1">
-                          For all professional inquiries
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start space-x-4">
-                      <Phone className="h-6 w-6 text-author-accent mt-1" />
-                      <div>
-                        <h4 className="font-raleway font-semibold text-author-primary mb-1">
-                          Phone
-                        </h4>
-                        <p className="text-author-text-light">
-                          +91 xxx xxx xxxx
-                        </p>
-                        <p className="text-sm text-author-text-light mt-1">
-                          Available weekdays 10 AM - 6 PM IST
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start space-x-4">
-                      <MapPin className="h-6 w-6 text-author-accent mt-1" />
-                      <div>
-                        <h4 className="font-raleway font-semibold text-author-primary mb-1">
-                          Location
-                        </h4>
-                        <p className="text-author-text-light">Kerala, India</p>
-                        <p className="text-sm text-author-text-light mt-1">
-                          Available for virtual meetings worldwide
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
               <Card className="border-0 shadow-lg bg-author-bg-section">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-serif font-bold text-author-primary mb-4">
