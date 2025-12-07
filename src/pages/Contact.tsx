@@ -115,7 +115,7 @@ const Contact = () => {
                       required
                       rows={6}
                       className="mt-2 border-gray-300 focus:border-author-accent focus:ring-author-accent resize-none"
-                      placeholder="Please share your thoughts, questions, or collaboration ideas..."
+                      placeholder="Please do share your thoughts, questions, or collaboration ideas..."
                     />
                   </div>
 
