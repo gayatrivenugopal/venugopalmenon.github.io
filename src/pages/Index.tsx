@@ -35,7 +35,7 @@ const Index = () => {
         "A collection of memoirs based on interviews with Venkataram Kalyanam, a secretary of Mahatma Gandhi, focusing on the final years of Gandhi's life.",
       image: gandhiAlive,
 	  backImage: gandhiAliveMalayalam,
-	  purchaseLink: "https://www.mbibooks.com/product/gandhi-alive/",
+	  purchaseLink: "https://www.amazon.in/GANDHI-ALIVE-KARASSERY-M-N/dp/9355494807",
       year: "2023",
       category: "Mathrubhumi Books",
     },
