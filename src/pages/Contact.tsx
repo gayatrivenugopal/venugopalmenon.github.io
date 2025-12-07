@@ -5,12 +5,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Send } from "lucide-react";
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
     alert("Thank you for your message! I'll get back to you soon.");
   };
 
@@ -25,8 +24,7 @@ const Contact = () => {
             Get in Touch
           </h1>
           <p className="text-xl text-author-text-light leading-relaxed">
-            Whether you're a publisher, fellow author, or reader, I'd love to
-            hear from you
+            Whether you're a publisher, fellow author, or reader, I'd love to hear from you
           </p>
         </div>
       </section>
@@ -35,6 +33,7 @@ const Contact = () => {
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
             {/* Contact Form */}
             <Card className="border-0 shadow-lg">
               <CardContent className="p-8">
@@ -45,10 +44,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <Label
-                        htmlFor="firstName"
-                        className="font-raleway font-medium text-author-primary"
-                      >
+                      <Label htmlFor="firstName" className="font-raleway font-medium text-author-primary">
                         First Name *
                       </Label>
                       <Input
@@ -57,11 +53,9 @@ const Contact = () => {
                         className="mt-2 border-gray-300 focus:border-author-accent focus:ring-author-accent"
                       />
                     </div>
+
                     <div>
-                      <Label
-                        htmlFor="lastName"
-                        className="font-raleway font-medium text-author-primary"
-                      >
+                      <Label htmlFor="lastName" className="font-raleway font-medium text-author-primary">
                         Last Name *
                       </Label>
                       <Input
@@ -73,10 +67,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label
-                      htmlFor="email"
-                      className="font-raleway font-medium text-author-primary"
-                    >
+                    <Label htmlFor="email" className="font-raleway font-medium text-author-primary">
                       Email Address *
                     </Label>
                     <Input
@@ -88,10 +79,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label
-                      htmlFor="subject"
-                      className="font-raleway font-medium text-author-primary"
-                    >
+                    <Label htmlFor="subject" className="font-raleway font-medium text-author-primary">
                       Subject *
                     </Label>
                     <Input
@@ -102,10 +90,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label
-                      htmlFor="category"
-                      className="font-raleway font-medium text-author-primary"
-                    >
+                    <Label htmlFor="category" className="font-raleway font-medium text-author-primary">
                       Category
                     </Label>
                     <select
@@ -122,10 +107,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label
-                      htmlFor="message"
-                      className="font-raleway font-medium text-author-primary"
-                    >
+                    <Label htmlFor="message" className="font-raleway font-medium text-author-primary">
                       Message *
                     </Label>
                     <Textarea
@@ -147,7 +129,7 @@ const Contact = () => {
                 </form>
               </CardContent>
             </Card>
-            </div>
+
           </div>
         </div>
       </section>
