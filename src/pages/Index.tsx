@@ -128,16 +128,7 @@ const Index = () => {
 	  link: "https://www.thehindu.com/opinion/open-page/mans-best-friend/article32990051.ece",
       excerpt:
         "Remembering how a dog was lost and found in two years and his tragic end later.",
-    },/*
-    {
-      title:
-        "With a clear conscience",
-      publication: "Deccan Herald",
-      date: "July 2013",
-	  link: "https://www.deccanherald.com/features/with-clear-conscience-2270538",
-      excerpt:
-		"The piece explores themes of workplace culture, decision-making under pressure, and personal integrity in professional settings.",
-    },*/
+    }
   ];
 
   return (
