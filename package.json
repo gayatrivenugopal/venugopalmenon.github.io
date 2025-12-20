@@ -5,13 +5,7 @@
   "homepage": "https://gayatrivenugopal.github.io/venugopalmenon.github.io",
   "scripts": {
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "dev": "vite",
-    "preview": "vite preview",
-    "test": "vitest --run",
-    "format.fix": "prettier --write .",
-    "typecheck": "tsc"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
