@@ -27,9 +27,9 @@ const About = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="bg-author-bg-section rounded-lg p-12 mb-12">
             <BookOpen className="h-16 w-16 text-author-accent mx-auto mb-6" />
-            <h2 className="text-3xl font-serif font-bold text-author-primary mb-6">
+            {/*<h2 className="text-3xl font-serif font-bold text-author-primary mb-6">
               About Page Coming Soon
-            </h2>
+            </h2>*/}
             <p className="text-lg text-author-text-light mb-8 leading-relaxed">
               Venugopal Menon retired from Larsen & Toubro Limited where he worked in sales, marketing,
 			   and finally training, wherein his writing and workshopping skills were widely
@@ -37,7 +37,7 @@ const About = () => {
 				preliminary manner, beginning with proofreading for Paragon Prepress Journal,
 				 Delhi.
             </p>
-
+			{/*
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="text-center">
                 <BookOpen className="h-8 w-8 text-author-accent mx-auto mb-3" />
@@ -66,7 +66,7 @@ const About = () => {
                   Approach to cultural translation
                 </p>
               </div>
-            </div>
+            </div>*/}
 
             <Button
               asChild

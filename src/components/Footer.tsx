@@ -8,21 +8,21 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* About Section */}
           <div>
-            <h3 className="text-2xl font-serif font-bold mb-6 text-author-accent">
+		  {/*<h3 className="text-2xl font-serif font-bold mb-6 text-author-accent">
               Venugopal Menon
             </h3>
             <p className="text-gray-300 leading-relaxed mb-4">
               Acclaimed translator and author of works including "The Second
               Marriage of Kunju Namboodiri" and "The Story of a Timepiece."
               Bridging cultures through the art of literary translation.
-            </p>
+		  </p>*/}
             <p className="text-sm text-gray-400">
               © {new Date().getFullYear()} Venugopal Menon. All rights
               reserved.
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Links 
           <div>
             <h4 className="text-lg font-raleway font-semibold uppercase tracking-wider mb-6">
               Quick Links
@@ -47,7 +47,7 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Contact Information */}
+           Contact Information 
           <div>
             <h4 className="text-lg font-raleway font-semibold uppercase tracking-wider mb-6">
               Get in Touch
@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
+		  */}
         <div className="border-t border-gray-700 mt-12 pt-8 text-center">
           <p className="text-sm text-gray-400">
             Literary translations that bridge cultures and connect hearts.

@@ -23,12 +23,10 @@ const Contact = () => {
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-author-primary mb-6">
             Get in Touch
           </h1>
-          <p className="text-xl text-author-text-light leading-relaxed">
-            Whether you're a publisher, fellow author, or reader, I'd love to hear from you
-          </p>
+         
         </div>
       </section>
-
+<center>
       {/* Contact Form and Info */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
@@ -115,7 +113,7 @@ const Contact = () => {
                       required
                       rows={6}
                       className="mt-2 border-gray-300 focus:border-author-accent focus:ring-author-accent resize-none"
-                      placeholder="Please share your thoughts, questions, or collaboration ideas..."
+                      
                     />
                   </div>
 
@@ -133,7 +131,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
+</center>
       <Footer />
     </div>
   );

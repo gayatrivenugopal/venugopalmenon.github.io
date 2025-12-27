@@ -367,11 +367,11 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-author-primary mb-6 uppercase tracking-wider">
               In the Press
             </h2>
-            <p className="text-xl text-author-text-light max-w-2xl mx-auto">
+			{/* <p className="text-xl text-author-text-light max-w-2xl mx-auto">
               Featured contributions in leading newspapers
-            </p>
+            </p> */}
           </div>
-
+<center>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {recentArticles.map((article, index) => (
               <Card
@@ -416,7 +416,7 @@ const Index = () => {
             ))}
           </div>
 
-        </div>
+        </div></center>
       </section>
 
       {/* Call to Action Section */}
