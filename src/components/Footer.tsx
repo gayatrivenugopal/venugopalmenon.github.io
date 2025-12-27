@@ -70,13 +70,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
-		  */}
+		  
         <div className="border-t border-gray-700 mt-12 pt-8 text-center">
           <p className="text-sm text-gray-400">
             Literary translations that bridge cultures and connect hearts.
           </p>
         </div>
-      </div>
+		  </div> */}
     </footer>
   );
 };
