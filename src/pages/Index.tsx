@@ -456,7 +456,6 @@ const Index = () => {
       </section>
 
       {/*<Footer />*/}
-		  {/*test*/}
     </div>
   );
 };
