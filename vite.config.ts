@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
     outDir: 'docs'
   },*/
   plugins: [react()],
-  base: '/',
+  base: '/venugopalmenon.github.io',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
