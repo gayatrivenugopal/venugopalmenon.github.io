@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
-//import Footer from "@/components/Footer";
 import classicStories from './images/classic-malayalam-stories.jpg';
 import timepiece from './images/the-story-of-the-timepiece.jpg';
 import gandhiAlive from './images/gandhi-alive.jpg';
