@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
-//import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 import classicStories from './images/classic-malayalam-stories.jpg';
 import timepiece from './images/the-story-of-the-timepiece.jpg';
 import gandhiAlive from './images/gandhi-alive.jpg';
@@ -371,6 +371,7 @@ const Index = () => {
               Featured contributions in leading newspapers
             </p> */}
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {recentArticles.map((article, index) => (
               <Card
@@ -454,6 +455,7 @@ const Index = () => {
         </div>
       </section>
 
+      <Footer />
     </div>
   );
 };
