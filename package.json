@@ -2,11 +2,8 @@
   "name": "fusion-starter",
   "private": true,
   "type": "module",
-  "homepage": "https://gayatrivenugopal.github.io/venugopalmenon.github.io",
   "scripts": {
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "preview": "vite preview",
     "test": "vitest --run",
