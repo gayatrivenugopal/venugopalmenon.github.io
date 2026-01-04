@@ -10,9 +10,9 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-   /*build: {
+  build: {
     outDir: 'docs'
-  },*/
+  },
   plugins: [react()],
   base: '/venugopalmenon.github.io/',
   resolve: {
