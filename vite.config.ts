@@ -11,7 +11,8 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   build: {
-    outDir: 'docs'
+    outDir: 'docs',
+	assetsDir: 'assets'
   },
   plugins: [react()],
   base: '/',
