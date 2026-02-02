@@ -418,8 +418,8 @@ const Index = () => {
               </Card>
             ))}
           </div>
-
-        </div></center>
+</center>
+        </div>
       </section>
 
       {/* Call to Action Section */}
