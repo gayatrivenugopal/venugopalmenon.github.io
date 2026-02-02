@@ -5,13 +5,20 @@ import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
-import classicStories from './images/classic-malayalam-stories.jpg';
+/*import classicStories from './images/classic-malayalam-stories.jpg';
 import timepiece from './images/the-story-of-the-timepiece.jpg';
 import gandhiAlive from './images/gandhi-alive.jpg';
 import gandhiAliveMalayalam from './images/gandhi-alive-malayalam.jpg';
-import profile from './images/venugopal-menon.jpg'
+import profile from './images/venugopal-menon.jpg' */
 
 import { BookOpen, Award, Quote, ArrowRight, Star } from "lucide-react";
+
+
+const classicStories = '/assets/classic-malayalam-stories.jpg';
+const timepiece = '/assets/the-story-of-the-timepiece.jpg';
+const gandhiAlive = '/assets/gandhi-alive.jpg';
+const gandhiAliveMalayalam = '/assets/gandhi-alive-malayalam.jpg';
+const profile = '/assets/venugopal-menon.jpg';
 
 console.log('Images loaded:', { classicStories, gandhiAlive, profile }); // ADD THIS LINE
 
