@@ -3,11 +3,10 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import { copyFileSync, mkdirSync, readdirSync, existsSync } from 'fs';
 
-// Plugin to copy images
 function copyImagesPlugin() {
   return {
     name: 'copy-images',
-    closeBundle() {
+    writeBundle() {
       const srcDir = path.resolve(__dirname, 'src/pages/images');
       const destDir = path.resolve(__dirname, 'docs/assets');
       
@@ -22,7 +21,7 @@ function copyImagesPlugin() {
             path.join(srcDir, file),
             path.join(destDir, file)
           );
-          console.log(`Copied: ${file}`);
+          console.log(`✓ Copied: ${file}`);
         }
       });
     }
