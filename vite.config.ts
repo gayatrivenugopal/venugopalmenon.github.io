@@ -1,18 +1,19 @@
 import { defineConfig } from "vite";
-//import react from "@vitejs/plugin-react-swc";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-
-// https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   server: {
     host: "::",
     port: 8080,
   },
   build: {
     outDir: 'docs',
-	assetsDir: 'assets'
+    assetsInlineLimit: 0,
+    rollupOptions: {
+      // Force Rollup to not exclude any assets
+      external: [],
+    }
   },
   plugins: [react()],
   base: '/',
@@ -21,4 +22,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}));
+  // Explicitly tell Vite to handle these file types as assets
+  assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.gif', '**/*.svg', '**/*.webp'],
+});

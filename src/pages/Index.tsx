@@ -13,6 +13,8 @@ import profile from './images/venugopal-menon.jpg'
 
 import { BookOpen, Award, Quote, ArrowRight, Star } from "lucide-react";
 
+console.log('Images loaded:', { classicStories, gandhiAlive, profile }); // ADD THIS LINE
+
 const Index = () => {
   const [flippedIndex, setFlippedIndex] = useState(null);
   const featuredWorks = [
