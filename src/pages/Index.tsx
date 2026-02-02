@@ -377,7 +377,7 @@ const Index = () => {
 <center>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {recentArticles.map((article, index) => (
-			<center>
+			
               <Card
                 key={index}
                 className="border-0 shadow-md hover:shadow-lg transition-shadow"
@@ -416,7 +416,7 @@ const Index = () => {
 					</Button>
 				  </div>
 				</CardContent>
-              </Card></center>
+              </Card>
             ))}
           </div>
 </center>
