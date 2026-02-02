@@ -430,7 +430,7 @@ const Index = () => {
           </h2>
 
           <p className="text-xl mb-8 text-gray-300 leading-relaxed">
-            Whether you're a publisher, fellow author, or reader interested in
+            Whether you are a publisher, fellow author, or reader interested in
             literary translation, I'd love to hear from you.
           </p>
 
