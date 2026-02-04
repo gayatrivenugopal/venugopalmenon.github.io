@@ -28,7 +28,7 @@ const Index = () => {
         "Brahmarakshas is a socio-horror novella exploring how modern minds turn to \
 		faith when logic fails to explain chronic illness, death, and misfortune. \
 		It reveals the universal fear of unknown forces that haunts human existence. \
-		<br>Bhagyarekha tells of a lottery ticket that refuses to be discarded, weaving a \
+		 Bhagyarekha tells of a lottery ticket that refuses to be discarded, weaving a \
 		mystery where fortune and misfortune blur into an otherworldly tale of life's \
 		interconnected characters and events.",
       image: bb,
