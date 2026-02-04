@@ -13,7 +13,7 @@ const classicStories = '/assets/classic-malayalam-stories.jpg';
 const timepiece = '/assets/the-story-of-the-timepiece.jpg';
 const gandhiAlive = '/assets/gandhi-alive.jpg';
 const gandhiAliveMalayalam = '/assets/gandhi-alive-malayalam.jpg';
-const bb = '/assets/brahmarakshas-bhagyarekha.jpg';
+const bb = '/assets/brahmarakshas-bhagyarekha.png';
 const bbMalayalam = '/assets/brahmarakshas-bhagyarekha-malayalam.png';
 const profile = '/assets/venugopal-menon.jpg';
 
