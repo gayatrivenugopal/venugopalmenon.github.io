@@ -13,6 +13,8 @@ const classicStories = '/assets/classic-malayalam-stories.jpg';
 const timepiece = '/assets/the-story-of-the-timepiece.jpg';
 const gandhiAlive = '/assets/gandhi-alive.jpg';
 const gandhiAliveMalayalam = '/assets/gandhi-alive-malayalam.jpg';
+const bb = '/assets/brahmarakshas-bhagyarekha.jpg';
+const bbMalayalam = '/assets/brahmarakshas-bhagyarekha-malayalam.png';
 const profile = '/assets/venugopal-menon.jpg';
 
 //console.log('Images loaded:', { classicStories, gandhiAlive, profile }); // ADD THIS LINE
@@ -20,6 +22,21 @@ const profile = '/assets/venugopal-menon.jpg';
 const Index = () => {
   const [flippedIndex, setFlippedIndex] = useState(null);
   const featuredWorks = [
+	{
+      title: "Brahmarakshas & Bhagyarekha",
+      description:
+        "Brahmarakshas is a socio-horror novella exploring how modern minds turn to \
+		faith when logic fails to explain chronic illness, death, and misfortune. \
+		It reveals the universal fear of unknown forces that haunts human existence. \
+		<br>Bhagyarekha tells of a lottery ticket that refuses to be discarded, weaving a \
+		mystery where fortune and misfortune blur into an otherworldly tale of life's \
+		interconnected characters and events.",
+      image: bb,
+	  backImage: bbMalayalam,
+	  purchaseLink: "https://www.amazon.in/-/hi/Shihabuddin-Poyithumkadavu/dp/9371793805",
+      year: "2025",
+	  category: ["Ratna Books"],
+    },
 	{
       title: "The Second Marriage of Kunju Namboodiri & Other Classic Malayalam Stories",
       description:
