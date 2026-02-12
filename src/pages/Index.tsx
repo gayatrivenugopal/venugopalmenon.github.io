@@ -36,7 +36,7 @@ const Index = () => {
 	  purchaseLink: "https://www.amazon.in/-/hi/Shihabuddin-Poyithumkadavu/dp/9371793805",
       year: "2025",
 	  category: ["Ratna Books"],
-	  imageAspect: "aspect-[3/3]",
+	  imageAspect: "aspect-[4/3]",
     },
 	{
       title: "The Second Marriage of Kunju Namboodiri & Other Classic Malayalam Stories",
