@@ -36,7 +36,7 @@ const Index = () => {
 	  purchaseLink: "https://www.amazon.in/-/hi/Shihabuddin-Poyithumkadavu/dp/9371793805",
       year: "2025",
 	  category: ["Ratna Books"],
-	  imageClass: "object-contain scale-99",
+	  imageAspect: "aspect-[3/3]",
     },
 	{
       title: "The Second Marriage of Kunju Namboodiri & Other Classic Malayalam Stories",
@@ -225,7 +225,7 @@ const Index = () => {
     }
     style={{ cursor: work.backImage ? "pointer" : "default" }}
   >
-    <div className="relative aspect-[3/4] overflow-hidden rounded-t-lg">
+	<div className={`relative overflow-hidden rounded-t-lg ${work.imageAspect || "aspect-[3/4]"}`}>
       <div
         className={`w-full h-full transition-transform duration-700 transform-style-3d ${
           flippedIndex === index ? "rotate-y-180" : ""
