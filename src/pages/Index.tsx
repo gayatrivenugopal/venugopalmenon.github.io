@@ -36,6 +36,7 @@ const Index = () => {
 	  purchaseLink: "https://www.amazon.in/-/hi/Shihabuddin-Poyithumkadavu/dp/9371793805",
       year: "2025",
 	  category: ["Ratna Books"],
+	  imageClass: "object-contain scale-75",
     },
 	{
       title: "The Second Marriage of Kunju Namboodiri & Other Classic Malayalam Stories",
@@ -235,7 +236,7 @@ const Index = () => {
           <img
             src={work.image}
             alt={work.title}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+			className={`w-full h-full transition-transform duration-300 group-hover:scale-105 ${work.imageClass || "object-cover"}`}
           />
         </div>
 
