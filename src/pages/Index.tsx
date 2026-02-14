@@ -444,8 +444,13 @@ const Index = () => {
       {/* Call to Action Section */}
       <section className="py-20 bg-author-primary text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          
-         
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+            Let's Connect
+          </h2>
+
+          <p className="text-xl mb-8 text-gray-300 leading-relaxed">
+           Publishers, fellow authors, and readers with an interest in literary translation are welcome to reach out via email.
+          </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
