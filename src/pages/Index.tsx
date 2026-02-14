@@ -246,7 +246,7 @@ const Index = () => {
             <img
               src={work.backImage}
               alt={`${work.title} Back Cover`}
-              className="w-full h-full object-cover"
+			className={`w-full h-full transition-transform duration-300 group-hover:scale-105 ${work.imageClass || "object-cover"}`}
             />
           ) : (
             <div className="w-full h-full bg-gray-100 flex items-center justify-center text-gray-500">
