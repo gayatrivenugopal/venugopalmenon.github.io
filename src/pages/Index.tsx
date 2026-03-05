@@ -342,7 +342,7 @@ const Index = () => {
               What Others Say
             </h2>
             <p className="text-xl text-author-text-light max-w-2xl mx-auto">
-              Recognition in literary critics and fellow authors
+              Recognition from literary critics and fellow authors
             </p>
           </div>
 		  <div className="mt-2 flex justify-center">
