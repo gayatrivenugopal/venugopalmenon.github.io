@@ -150,6 +150,24 @@ const Index = () => {
       excerpt:
         "Remembering how a dog was lost and found in two years and his tragic end later.",
     },
+	{
+      title:
+        "When stories cease being just fiction",
+      publication: "The New Indian Express",
+      date: "July 2016",
+	  link: "https://www.newindianexpress.com/opinion/columns/2016/Jul/14/when-stories-cease-being-just-fiction-880603.html",
+      excerpt:
+        "A serendipitous train conversation leads to S K Pottekat's Oru Theruvinte Katha, and the realization that some fiction cuts too close to life to be called fiction at all.",
+    },
+	{
+      title:
+        "With a clear conscience",
+      publication: "Deccan Herald",
+      date: "July 2013",
+	  link: "https://www.deccanherald.com/features/with-clear-conscience-2270538",
+      excerpt:
+        "A corporate veteran's wry, unflinching account of how ambition, compromise, and the unwritten rules of the ladder quietly conspire to hollow out a career.",
+    }
   ];
 
   return (
