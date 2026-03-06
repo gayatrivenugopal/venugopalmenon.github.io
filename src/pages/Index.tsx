@@ -16,6 +16,8 @@ const gandhiAliveMalayalam = '/assets/gandhi-alive-malayalam.jpg';
 const bb = '/assets/brahmarakshas-bhagyarekha.png';
 const bbMalayalam = '/assets/brahmarakshas-bhagyarekha-malayalam.png';
 const profile = '/assets/venugopal-menon.jpg';
+const theHealer = '/assets/the-healer.pdf';
+
 
 //console.log('Images loaded:', { classicStories, gandhiAlive, profile }); // ADD THIS LINE
 
@@ -149,6 +151,16 @@ const Index = () => {
 	  link: "https://www.thehindu.com/opinion/open-page/mans-best-friend/article32990051.ece",
       excerpt:
         "Remembering how a dog was lost and found in two years and his tragic end later.",
+    },
+	{
+      title:
+        "The Healer",
+      publication: "National Herald",
+      date: "December 2017",
+	  link:theHealer,
+	  isPdf: true,
+      excerpt:
+        "Generations of secret knowledge, one cracked femur, and a very busy operating room.",
     },
 	{
       title:
@@ -440,16 +452,12 @@ const Index = () => {
 				  {/* Footer pinned to bottom */}
 				  <div className="mt-auto flex items-center justify-between pt-4 border-t border-gray-100">
 					<span className="font-bold text-sm text-author-text-light">{article.date}</span>
-					<Button
-					  asChild
-					  variant="ghost"
-					  size="sm"
-					  className="text-author-accent hover:text-author-primary font-raleway uppercase tracking-wider p-0"
-					>
-					  <Link to={article.link}>
-						Read Article <ArrowRight className="ml-2 h-4 w-4" />
-					  </Link>
-					</Button>
+					<Button asChild variant="ghost" size="sm"
+  className="text-author-accent hover:text-author-primary font-raleway uppercase tracking-wider p-0">
+  <a href={article.link} target="_blank" rel="noopener noreferrer">
+    Read Article <ArrowRight className="ml-2 h-4 w-4" />
+  </a>
+</Button>
 				  </div>
 				</CardContent>
               </Card>
