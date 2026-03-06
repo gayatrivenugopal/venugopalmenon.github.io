@@ -5,6 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
+import theHealer from './files/the-healer.pdf';
+
 
 import { BookOpen, Award, Quote, ArrowRight, Star } from "lucide-react";
 
@@ -16,8 +18,6 @@ const gandhiAliveMalayalam = '/assets/gandhi-alive-malayalam.jpg';
 const bb = '/assets/brahmarakshas-bhagyarekha.png';
 const bbMalayalam = '/assets/brahmarakshas-bhagyarekha-malayalam.png';
 const profile = '/assets/venugopal-menon.jpg';
-const theHealer = '/assets/the-healer.pdf';
-
 
 //console.log('Images loaded:', { classicStories, gandhiAlive, profile }); // ADD THIS LINE
 
