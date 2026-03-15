@@ -90,6 +90,7 @@ const Excerpt = () => {
                 {section.heading}
               </h2>
             )}
+			<div className="mt-16 pt-8 border-t border-gray-200 text-center"></div>
             {section.paragraphs.map((para, pi) => (
               <p key={pi} className="mb-5 text-lg leading-8 text-gray-800 font-serif">
                 {para}
