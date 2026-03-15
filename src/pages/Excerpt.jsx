@@ -197,7 +197,7 @@ const excerptData = {
           "It was the act of a French girl enticing an Englishman who sits on a bench in the park (the assumption is that the scene is in Paris). The actor and the actress are the same person—Laila. But seeing the drape of her dress and her expertise in altering its style abruptly, her dialogues and acting give the impression that there are two persons on the bench in the park. Embracing the Englishman and making him ecstatic before picking his pocket with great knack was a climax that thrilled.",
           "As I walked out of the theatre onto the streets, an unknown fear gripped me. A street in Soho is the playfield of pick-pockets, snatchers and murderers. A Negro youth moving around dressed in a cowboy attire might have a knife and a dagger and a pistol hidden in his waistband. Huge Negro whores standing on the street are man-eating demons. Trapped in their grip, there is no escape. Any well-dressed individual attracts the interest of all these people.",
           "Many of the amusement theatres and hotels here are agencies where plundered, stolen goods and illicit liquor are stored hidden. I remembered reading in the newspaper this morning of the raid that the police conducted last night in one of the more famous dance theatres of Soho Square confiscating a lot of illicit brew and arresting two of the dancers there...",
-          "Nevertheless, Soho at the East End will forever remain the unavoidable pleasure spot of the dignified ladies and gentlemen of West End, the focal point of London fashion. With a black veil masking their face, the aristocratic English ladies dance here with the Kappiritharunar [Negro lads] of robust physique; spend nights with them...",
+          //"Nevertheless, Soho at the East End will forever remain the unavoidable pleasure spot of the dignified ladies and gentlemen of West End, the focal point of London fashion. With a black veil masking their face, the aristocratic English ladies dance here with the Kappiritharunar [Negro lads] of robust physique; spend nights with them...",
           "05.11.2020",
         ],
       },
@@ -258,7 +258,7 @@ const Excerpt = () => {
         <div className="mt-16 pt-8 border-t border-gray-200 text-center">
           <p className="text-author-text-light italic font-serif text-lg">— End of Excerpt —</p>
         </div>
-
+		<br/>
       </div>
     </div>
   );
