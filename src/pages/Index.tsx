@@ -157,18 +157,18 @@ const Index = () => {
 
   const sundayReads = [
     {
-      title: "Title of Piece One",
+      title: "The Primal Frontier",
       publication: "Sunday Supplement",
-      date: "Month Year",
-      teaser: "A one-line hook or excerpt preview.",
-      slug: "sunday-one",
+      date: "Oct 29, 2013",
+      teaser: "A fever, a borrowed car, a missed warning — and the moment that changed everything.",
+      slug: "primal-frontier",
     },
     {
-      title: "Title of Piece Two",
+      title: "The Flightless Ibis",
       publication: "Sunday Supplement",
-      date: "Month Year",
-      teaser: "A one-line hook or excerpt preview.",
-      slug: "sunday-two",
+      date: "Nov 06, 2020",
+      teaser: "A car left brown at a bird sanctuary comes home white. A village, a thousand Ibis, and a neighbour who never took the train again.",
+      slug: "flightless-ibis",
     },
   ];
 
