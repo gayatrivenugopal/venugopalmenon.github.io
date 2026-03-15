@@ -177,20 +177,21 @@ const Index = () => {
     }
   ];
 
-  const novelExcerpts = [
+   const novelExcerpts = [
     {
-      title: "Title of Novel One",
+      title: "The Saga of Sweetmeat Street",
       genre: "Literary Fiction",
-      teaser: "A one-line hook about what this excerpt is about.",
-      slug: "novel-one",
+      teaser: "A street that outlives its people — centuries of lives, loves, and voices that history never recorded.",
+      slug: "sweetmeat-street",
     },
     {
-      title: "Title of Novel Two",
-      genre: "Historical Fiction",
-      teaser: "A one-line hook about what this excerpt is about.",
-      slug: "novel-two",
+      title: "Soldier Kuttappan",
+      genre: "Literary Fiction",
+      teaser: "A soldier on army leave composes a furious letter to his unfaithful wife — and agonises over every word.",
+      slug: "soldier-kuttappan",
     },
   ];
+
 
   const sundayReads = [
     {
