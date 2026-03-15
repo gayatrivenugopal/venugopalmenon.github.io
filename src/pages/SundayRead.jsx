@@ -23,7 +23,6 @@ const sundayData = {
           "May be now I know what I was waiting for. It certainly wasn't a soul mate that would weep her blue eyes sore as I departed. It wasn't accolades of success. It wasn't renunciation for the betterment of the race. It wasn't self realization in a form of self denial to self-efface and surrender to the will and the desires of others -- to refrain from self aggrandizement.",
           "Or was it?",
           "I had crossed the primal frontier of my life.",
-          "—Venu",
         ],
       },
     ],
@@ -47,7 +46,6 @@ const sundayData = {
           "(Petrichor is the distinctive smell of the earth that accompanies the first rain after a warm spell.)",
           "In his natural wisdom my neighbour parked his car at our one-street town railway station grounds to take a train to the nearest city because, he advised me, it made more sense than driving the car for an hour and a half, conforming to speed limits, all the while bracing for CCTV cameras and speed guns along the highway, breathing in the fumes emitted by long distance diesel trucks and kerosene improvised motorcycles.",
           "The day I saw him return at dusk in a strange car that resembled his own in shape and manner but was the colour of a bright summer cloud—was the last day my venerable neighbour took a train to town.",
-          "—Venu",
         ],
       },
     ],
@@ -99,7 +97,7 @@ const SundayRead = () => {
             ))}
           </div>
         ))}
-
+		<br/>
         <div className="mt-16 pt-8 border-t border-gray-200 text-center">
           <p className="text-author-text-light italic font-serif text-lg">— End of Article —</p>
         </div>
