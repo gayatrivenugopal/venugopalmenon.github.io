@@ -40,13 +40,12 @@ const Navigation = () => {
   };
 
   const navLinks = [
-    { href: "/", label: "Home", isScroll: false },
     { href: "/about", label: "About", isScroll: false },
     { href: "translations", label: "Translations", isScroll: true },
     { href: "writings", label: "Articles", isScroll: true },
-    { href: "/contact", label: "Contact", isScroll: false },
 	{ href: "manuscripts", label: "Manuscripts", isScroll: true },
 	{ href: "sunday", label: "Sunday Read", isScroll: true },
+	{ href: "/contact", label: "Contact", isScroll: false },
   ];
 
   return (
