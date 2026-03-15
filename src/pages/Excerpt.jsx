@@ -9,7 +9,7 @@ const excerptData = {
     genre: "Literary Fiction",
     sections: [
       {
-        heading: null,
+        heading: "",
         paragraphs: [
           "Once on the day after the man had left, Ayesha was seated on the patio plucking lice off her head, her hair spread out, lost in thought. Then Perikalan Andru stealthily went and sat in another corner of that patio and casting his eyes into the street thought up a ditty and began to sing:",
           "'Aaayissa beebiyekkangaan / Aasha moothu—mandiyethum / Payasa kothiyanoru / Pandikaadan Kakka! / Pathu kadam bayi nadannu / Kalu random suttedutha pathiriyayee—mooppororu / Pothumbandikkaran…'",
@@ -38,7 +38,7 @@ const excerptData = {
     genre: "Literary Fiction",
     sections: [
       {
-        heading: null,
+        heading: "",
         paragraphs: [
           "'Edee nandiketta koothachiee…,' ['You whore of a bloody ingrate…!']",
           "You decking up like Urvashi, the epitome of celestial beauty and going to the movies with that tail-licker of yours—God showed it all to me, didn't he, you creep! You harlot! Draped in that red saree that I bought you… a green silk blouse and holding a silk umbrella… you with that hamukku, the blighter, Balan…",

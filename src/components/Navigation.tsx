@@ -103,7 +103,7 @@ const Navigation = () => {
             </nav>
 
             {/* Logo — center column */}
-            <div className="flex justify-center">
+            <div className="flex justify-center" invisible>
               <Link
                 to="/"
                 className="text-2xl md:text-3xl font-serif font-bold text-author-primary tracking-wide whitespace-nowrap"
@@ -123,7 +123,7 @@ const Navigation = () => {
           <div className="lg:hidden flex items-center justify-between h-full">
             <Link
               to="/"
-              className="text-2xl font-serif font-bold text-author-primary tracking-wide"
+              className="text-2xl font-serif font-bold text-author-primary tracking-wide invisible"
             >
               Venugopal Menon
             </Link>
