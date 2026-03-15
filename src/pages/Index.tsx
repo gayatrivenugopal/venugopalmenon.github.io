@@ -5,10 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
-import theHealer from './files/the-healer.pdf';
 
-
-import { BookOpen, Award, Quote, ArrowRight, Star } from "lucide-react";
+import { BookOpen, Award, Quote, ArrowRight, Star, FileText, Coffee } from "lucide-react";
 
 
 const classicStories = '/assets/classic-malayalam-stories.jpg';
@@ -18,11 +16,12 @@ const gandhiAliveMalayalam = '/assets/gandhi-alive-malayalam.jpg';
 const bb = '/assets/brahmarakshas-bhagyarekha.png';
 const bbMalayalam = '/assets/brahmarakshas-bhagyarekha-malayalam.png';
 const profile = '/assets/venugopal-menon.jpg';
+import theHealer from './files/the-healer.pdf';
 
-//console.log('Images loaded:', { classicStories, gandhiAlive, profile }); // ADD THIS LINE
 
 const Index = () => {
   const [flippedIndex, setFlippedIndex] = useState(null);
+
   const featuredWorks = [
 	{
       title: "Brahmarakshas & Bhagyarekha",
@@ -144,8 +143,7 @@ const Index = () => {
 
   const recentArticles = [
     {
-      title:
-        "Man's best friend",
+      title: "Man's best friend",
       publication: "The Hindu",
       date: "November 2020",
 	  link: "https://www.thehindu.com/opinion/open-page/mans-best-friend/article32990051.ece",
@@ -153,18 +151,7 @@ const Index = () => {
         "Remembering how a dog was lost and found in two years and his tragic end later.",
     },
 	{
-      title:
-        "The Healer",
-      publication: "National Herald",
-      date: "December 2017",
-	  link:theHealer,
-	  isPdf: true,
-      excerpt:
-        "Generations of secret knowledge, one cracked femur, and a very busy operating room.",
-    },
-	{
-      title:
-        "When stories cease being just fiction",
+      title: "When stories cease being just fiction",
       publication: "The New Indian Express",
       date: "July 2016",
 	  link: "https://www.newindianexpress.com/opinion/columns/2016/Jul/14/when-stories-cease-being-just-fiction-880603.html",
@@ -172,14 +159,54 @@ const Index = () => {
         "A serendipitous train conversation leads to S K Pottekat's Oru Theruvinte Katha, and the realization that some fiction cuts too close to life to be called fiction at all.",
     },
 	{
-      title:
-        "With a clear conscience",
+      title: "With a clear conscience",
       publication: "Deccan Herald",
       date: "July 2013",
 	  link: "https://www.deccanherald.com/features/with-clear-conscience-2270538",
       excerpt:
         "A corporate veteran's wry, unflinching account of how ambition, compromise, and the unwritten rules of the ladder quietly conspire to hollow out a career.",
+    },
+	{
+      title: "The Healer",
+      publication: "National Herald",
+      date: "December 2017",
+	  link: theHealer,
+      excerpt:
+        "Folk medicine's miracle cure: turning a fracture into a surgeon's nightmare.",
+      isPdf: true,
     }
+  ];
+
+  const novelExcerpts = [
+    {
+      title: "Title of Novel One",
+      genre: "Literary Fiction",
+      teaser: "A one-line hook about what this excerpt is about.",
+      slug: "novel-one",
+    },
+    {
+      title: "Title of Novel Two",
+      genre: "Historical Fiction",
+      teaser: "A one-line hook about what this excerpt is about.",
+      slug: "novel-two",
+    },
+  ];
+
+  const sundayReads = [
+    {
+      title: "Title of Piece One",
+      publication: "Sunday Magazine",
+      date: "Month Year",
+      teaser: "A one-line hook or excerpt preview.",
+      slug: "sunday-one",
+    },
+    {
+      title: "Title of Piece Two",
+      publication: "Sunday Supplement",
+      date: "Month Year",
+      teaser: "A one-line hook or excerpt preview.",
+      slug: "sunday-two",
+    },
   ];
 
   return (
@@ -198,33 +225,11 @@ const Index = () => {
                 through Translation
               </span>
             </h1>
-
-            <p className="text-xl md:text-2xl text-author-text-light mb-2in  leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-author-text-light mb-2in leading-relaxed max-w-3xl mx-auto">
               Renowned translator and writer bringing the richness of Malayalam
               literature to global audiences with sensitivity and artistic
               excellence.
             </p>
-			{/*
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button
-                asChild
-                size="lg"
-                className="bg-author-primary hover:bg-author-accent text-white px-8 py-3 text-lg font-raleway uppercase tracking-wider"
-              >
-                <Link to="/works">
-                  Explore Works <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-author-primary text-author-primary hover:bg-author-primary hover:text-white px-8 py-3 text-lg font-raleway uppercase tracking-wider"
-              >
-                <Link to="/contact">Send Email</Link>
-              </Button>
-            </div> */}
           </div>
         </div>
       </section>
@@ -237,112 +242,99 @@ const Index = () => {
               Featured Works
             </h2>
             <p className="text-xl text-author-text-light max-w-2xl mx-auto">
-              Literary translations that preserve the essence while opening new
-              worlds
+              Literary translations that preserve the essence while opening new worlds
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-				{featuredWorks.map((work, index) => (
-  <Card
-    key={index}
-    className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md flex flex-col"
-    onClick={() =>
-      work.backImage
-        ? setFlippedIndex(flippedIndex === index ? null : index)
-        : null
-    }
-    style={{ cursor: work.backImage ? "pointer" : "default" }}
-  >
-	<div className={`relative overflow-hidden rounded-t-lg ${work.imageAspect || "aspect-[3/4]"}`}>
-      <div
-        className={`w-full h-full transition-transform duration-700 transform-style-3d ${
-          flippedIndex === index ? "rotate-y-180" : ""
-        }`}
-      >
-        {/* FRONT */}
-        <div className="absolute w-full h-full backface-hidden">
-          <img
-            src={work.image}
-            alt={work.title}
-			className={`w-full h-full transition-transform duration-300 group-hover:scale-105 ${work.imageClass || "object-cover"}`}
-          />
-        </div>
+            {featuredWorks.map((work, index) => (
+              <Card
+                key={index}
+                className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md flex flex-col"
+                onClick={() =>
+                  work.backImage
+                    ? setFlippedIndex(flippedIndex === index ? null : index)
+                    : null
+                }
+                style={{ cursor: work.backImage ? "pointer" : "default" }}
+              >
+                <div className={`relative overflow-hidden rounded-t-lg ${work.imageAspect || "aspect-[3/4]"}`}>
+                  <div
+                    className={`w-full h-full transition-transform duration-700 transform-style-3d ${
+                      flippedIndex === index ? "rotate-y-180" : ""
+                    }`}
+                  >
+                    {/* FRONT */}
+                    <div className="absolute w-full h-full backface-hidden">
+                      <img
+                        src={work.image}
+                        alt={work.title}
+                        className={`w-full h-full transition-transform duration-300 group-hover:scale-105 ${work.imageClass || "object-cover"}`}
+                      />
+                    </div>
 
-        {/* BACK */}
-        <div className="absolute w-full h-full rotate-y-180 backface-hidden">
-          {work.backImage ? (
-            <img
-              src={work.backImage}
-              alt={`${work.title} Back Cover`}
-			className={`w-full h-full transition-transform duration-300 group-hover:scale-105 ${work.imageClass || "object-cover"}`}
-            />
-          ) : (
-            <div className="w-full h-full bg-gray-100 flex items-center justify-center text-gray-500">
-              No Back Cover
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
+                    {/* BACK */}
+                    <div className="absolute w-full h-full rotate-y-180 backface-hidden">
+                      {work.backImage ? (
+                        <img
+                          src={work.backImage}
+                          alt={`${work.title} Back Cover`}
+                          className={`w-full h-full transition-transform duration-300 group-hover:scale-105 ${work.imageClass || "object-cover"}`}
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-gray-100 flex items-center justify-center text-gray-500">
+                          No Back Cover
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
 
-    <CardContent className="p-6 flex flex-col flex-1">
-      <div className="flex justify-between items-center mb-3">
-        <Badge
-          variant="secondary"
-          className="bg-author-accent/10 text-author-accent border-author-accent/20 leading-snug py-2"
-        >
-          <div className="text-center">
-            {Array.isArray(work.category)
-              ? work.category.map((line, i) => (
-                  <div key={i}>{line}</div>
-                ))
-              : work.category}
-          </div>
-        </Badge>
-        <span className="text-sm text-author-text-light text-right font-bold">
-          {work.year}
-        </span>
-      </div>
+                <CardContent className="p-6 flex flex-col flex-1">
+                  <div className="flex justify-between items-center mb-3">
+                    <Badge
+                      variant="secondary"
+                      className="bg-author-accent/10 text-author-accent border-author-accent/20 leading-snug py-2"
+                    >
+                      <div className="text-center">
+                        {Array.isArray(work.category)
+                          ? work.category.map((line, i) => (
+                              <div key={i}>{line}</div>
+                            ))
+                          : work.category}
+                      </div>
+                    </Badge>
+                    <span className="text-sm text-author-text-light text-right font-bold">
+                      {work.year}
+                    </span>
+                  </div>
 
-      <h3 className="text-xl font-serif font-bold text-author-primary mb-3">
-        {work.title}
-      </h3>
+                  <h3 className="text-xl font-serif font-bold text-author-primary mb-3">
+                    {work.title}
+                  </h3>
 
-      <p className="text-author-text-light leading-relaxed mb-4">
-        {work.description}
-      </p>
+                  <p className="text-author-text-light leading-relaxed mb-4">
+                    {work.description}
+                  </p>
 
-	  <div className="mt-auto flex justify-center">
-      {work.purchaseLink && (
-        <Button
-          asChild
-          size="sm"
-          className="bg-author-accent/80 hover:bg-author-accent/90 text-white font-semibold py-2 px-6 rounded shadow-md transition flex items-center gap-2"
-        >
-          <a href={work.purchaseLink} target="_blank" rel="noopener noreferrer">
-            <ShoppingCart className="h-4 w-4" />
-            Buy Now
-          </a>
-        </Button>
-      )}
-		</div>
-    </CardContent>
-  </Card>
+                  <div className="mt-auto flex justify-center">
+                    {work.purchaseLink && (
+                      <Button
+                        asChild
+                        size="sm"
+                        className="bg-author-accent/80 hover:bg-author-accent/90 text-white font-semibold py-2 px-6 rounded shadow-md transition flex items-center gap-2"
+                      >
+                        <a href={work.purchaseLink} target="_blank" rel="noopener noreferrer">
+                          <ShoppingCart className="h-4 w-4" />
+                          Buy Now
+                        </a>
+                      </Button>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
-		{/*
-          <div className="text-center mt-12">
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="border-author-primary text-author-primary hover:bg-author-primary hover:text-white font-raleway uppercase tracking-wider"
-            >
-              <Link to="/works">View All Works</Link>
-            </Button>
-          </div>*/}
         </div>
       </section>
 
@@ -357,24 +349,22 @@ const Index = () => {
               Recognition from literary critics and fellow authors
             </p>
           </div>
-		  <div className="mt-2 flex justify-center">
-		  <img
-			src={profile}
-			alt="Venugopal Menon"
-			className="w-40 h-40 rounded-full shadow-md object-cover border-4 border-author-accent"
-		  />
-		</div><br/><br/>
+          <div className="mt-2 flex justify-center">
+            <img
+              src={profile}
+              alt="Venugopal Menon"
+              className="w-40 h-40 rounded-full shadow-md object-cover border-4 border-author-accent"
+            />
+          </div><br/><br/>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="border-0 shadow-md bg-white">
                 <CardContent className="p-8">
                   <Quote className="h-10 w-10 text-author-accent mb-6" />
-
                   <p className="text-lg text-author-primary leading-relaxed mb-6 font-serif italic">
                     "{testimonial.quote}"
                   </p>
-
                   <div className="border-t pt-6">
                     <p className="font-raleway font-semibold text-author-primary mb-1">
                       {testimonial.author}
@@ -383,31 +373,20 @@ const Index = () => {
                       {testimonial.position}
                     </p>
                     <p className="text-sm text-author-accent font-medium">
-                       <a 
-						href={testimonial.institutionUrl} 
-						target="_blank" 
-						rel="noopener noreferrer"
-						className="hover:underline"
-					  >
-					  {testimonial.institution}
-					  </a>
+                      <a
+                        href={testimonial.institutionUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        {testimonial.institution}
+                      </a>
                     </p>
                   </div>
                 </CardContent>
               </Card>
             ))}
           </div>
-
-          {/*<div className="text-center mt-12">
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="border-author-primary text-author-primary hover:bg-author-primary hover:text-white font-raleway uppercase tracking-wider"
-            >
-              <Link to="/reviews">Read All Reviews</Link>
-            </Button>
-          </div>*/}
         </div>
       </section>
 
@@ -418,52 +397,128 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-author-primary mb-6 uppercase tracking-wider">
               In the Press
             </h2>
-			{/* <p className="text-xl text-author-text-light max-w-2xl mx-auto">
-              Featured contributions in leading newspapers
-            </p> */}
           </div>
-<center>
+          <center>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {recentArticles.map((article, index) => (
-			
               <Card
                 key={index}
                 className="border-0 shadow-md hover:shadow-lg transition-shadow"
               >
                 <CardContent className="p-8 flex flex-col h-full">
-				  {/* Top Content */}
-				  <div className="mb-4">
-					<div className="flex items-center gap-2 mb-4">
-					  <BookOpen className="h-5 w-5 text-author-accent" />
-					  <span className="text-sm font-raleway font-medium text-author-accent uppercase tracking-wider">
-						{article.publication}
-					  </span>
-					</div>
-
-					<h3 className="text-xl font-serif font-bold text-author-primary mb-3 leading-tight">
-					  {article.title}
-					</h3>
-
-					<p className="text-author-text-light leading-relaxed">
-					  {article.excerpt}
-					</p>
-				  </div>
-
-				  {/* Footer pinned to bottom */}
-				  <div className="mt-auto flex items-center justify-between pt-4 border-t border-gray-100">
-					<span className="font-bold text-sm text-author-text-light">{article.date}</span>
-					<Button asChild variant="ghost" size="sm"
-  className="text-author-accent hover:text-author-primary font-raleway uppercase tracking-wider p-0">
-  <a href={article.link} target="_blank" rel="noopener noreferrer">
-    Read Article <ArrowRight className="ml-2 h-4 w-4" />
-  </a>
-</Button>
-				  </div>
-				</CardContent>
+                  <div className="mb-4">
+                    <div className="flex items-center gap-2 mb-4">
+                      <BookOpen className="h-5 w-5 text-author-accent" />
+                      <span className="text-sm font-raleway font-medium text-author-accent uppercase tracking-wider">
+                        {article.publication}
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-serif font-bold text-author-primary mb-3 leading-tight">
+                      {article.title}
+                    </h3>
+                    <p className="text-author-text-light leading-relaxed">
+                      {article.excerpt}
+                    </p>
+                  </div>
+                  <div className="mt-auto flex items-center justify-between pt-4 border-t border-gray-100">
+                    <span className="font-bold text-sm text-author-text-light">{article.date}</span>
+                    <Button
+                      asChild
+                      variant="ghost"
+                      size="sm"
+                      className="text-author-accent hover:text-author-primary font-raleway uppercase tracking-wider p-0"
+                    >
+                      <a href={article.link} target="_blank" rel="noopener noreferrer">
+                        Read Article <ArrowRight className="ml-2 h-4 w-4" />
+                      </a>
+                    </Button>
+                  </div>
+                </CardContent>
               </Card>
             ))}
           </div>
-</center>
+          </center>
+        </div>
+      </section>
+
+      {/* From the Manuscript Shelf — Novel Excerpts */}
+      <section className="py-20 bg-author-bg-section">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-author-primary mb-6 uppercase tracking-wider">
+              From the Manuscript Shelf
+            </h2>
+            <p className="text-xl text-author-text-light max-w-2xl mx-auto">
+              Manuscripts that haven't found their home yet.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {novelExcerpts.map((item, index) => (
+              <Link to={`/excerpt/${item.slug}`} key={index} className="group">
+                <Card className="border-0 shadow-md hover:shadow-xl transition-all duration-300 h-full cursor-pointer bg-white">
+                  <CardContent className="p-8 flex flex-col h-full">
+                    <div className="flex items-center gap-2 mb-4">
+                      <FileText className="h-5 w-5 text-author-accent" />
+                      <span className="text-sm font-raleway font-medium text-author-accent uppercase tracking-wider">
+                        {item.genre}
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-serif font-bold text-author-primary mb-3 leading-tight group-hover:text-author-accent transition-colors duration-200">
+                      {item.title}
+                    </h3>
+                    <p className="text-author-text-light leading-relaxed flex-1">
+                      {item.teaser}
+                    </p>
+                    <div className="mt-6 flex items-center text-author-accent font-raleway text-sm uppercase tracking-wider font-semibold">
+                      Read Excerpt <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Sunday Read */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-author-primary mb-6 uppercase tracking-wider">
+              Sunday Read
+            </h2>
+            <p className="text-xl text-author-text-light max-w-2xl mx-auto">
+              Unpublished pieces written for the weekend supplement
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {sundayReads.map((item, index) => (
+              <Link to={`/sunday/${item.slug}`} key={index} className="group">
+                <Card className="border-0 shadow-md hover:shadow-xl transition-all duration-300 h-full cursor-pointer">
+                  <CardContent className="p-8 flex flex-col h-full">
+                    <div className="flex items-center gap-2 mb-4">
+                      <Coffee className="h-5 w-5 text-author-accent" />
+                      <span className="text-sm font-raleway font-medium text-author-accent uppercase tracking-wider">
+                        {item.publication}
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-serif font-bold text-author-primary mb-3 leading-tight group-hover:text-author-accent transition-colors duration-200">
+                      {item.title}
+                    </h3>
+                    <p className="text-author-text-light leading-relaxed flex-1">
+                      {item.teaser}
+                    </p>
+                    <div className="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 mt-6">
+                      <span className="text-sm font-bold text-author-text-light">{item.date}</span>
+                      <div className="flex items-center text-author-accent font-raleway text-sm uppercase tracking-wider font-semibold">
+                        Read <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -473,11 +528,9 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
             Let's Connect
           </h2>
-
           <p className="text-xl mb-8 text-gray-300 leading-relaxed">
-           Publishers, fellow authors, and readers with an interest in literary translation are welcome to reach out via email.
+            Publishers, fellow authors, and readers with an interest in literary translation are welcome to reach out via email.
           </p>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild
@@ -489,7 +542,6 @@ const Index = () => {
                 Send Email <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-
             <Button
               asChild
               size="lg"
@@ -502,7 +554,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/*<Footer />*/}
     </div>
   );
 };

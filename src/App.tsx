@@ -11,6 +11,8 @@ import Reviews from "./pages/Reviews";
 import Articles from "./pages/Articles";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Excerpt from "./pages/Excerpt";
+import SundayRead from "./pages/SundayRead";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/contact" element={<Contact />} />
+		  <Route path="/excerpt/:slug" element={<Excerpt />} />
+		  <Route path="/sunday/:slug" element={<SundayRead />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
