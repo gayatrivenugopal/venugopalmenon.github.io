@@ -39,14 +39,48 @@ const Navigation = () => {
     }
   };
 
-  const navLinks = [
+  const leftLinks = [
     { href: "/about", label: "About", isScroll: false },
     { href: "translations", label: "Translations", isScroll: true },
     { href: "writings", label: "Articles", isScroll: true },
-	{ href: "manuscripts", label: "Manuscripts", isScroll: true },
-	{ href: "sunday", label: "Sunday Read", isScroll: true },
-	{ href: "/contact", label: "Contact", isScroll: false },
   ];
+
+  const rightLinks = [
+    { href: "manuscripts", label: "Manuscripts", isScroll: true },
+    { href: "sunday", label: "Sunday Read", isScroll: true },
+    { href: "/contact", label: "Contact", isScroll: false },
+  ];
+
+  const allLinks = [...leftLinks, ...rightLinks];
+
+  const renderLink = (link, extraClass = "") =>
+    link.isScroll ? (
+      <span
+        key={link.href}
+        onClick={() => handleScrollLinkClick(link.href)}
+        className={cn(
+          "text-xs font-raleway font-medium uppercase tracking-widest transition-colors cursor-pointer",
+          "text-author-primary hover:text-author-accent",
+          extraClass
+        )}
+      >
+        {link.label}
+      </span>
+    ) : (
+      <Link
+        key={link.href}
+        to={link.href}
+        className={cn(
+          "text-xs font-raleway font-medium uppercase tracking-widest transition-colors",
+          location.pathname === link.href
+            ? "text-author-accent"
+            : "text-author-primary hover:text-author-accent",
+          extraClass
+        )}
+      >
+        {link.label}
+      </Link>
+    );
 
   return (
     <>
@@ -59,94 +93,42 @@ const Navigation = () => {
         )}
       >
         <div className="max-w-7xl mx-auto px-4 h-full">
-          <div className="flex items-center justify-between h-full">
-            {/* Contact Button - Hidden on mobile */}
-            <div className="hidden lg:block">
-              <Button
-                asChild
-                variant="outline"
-                size="sm"
-                className="uppercase text-xs font-raleway tracking-widest border-author-primary text-author-primary hover:bg-author-primary hover:text-white"
-              >
-                <Link to="/contact">Send Email</Link>
-              </Button>
-            </div>
 
-            {/* Left Navigation */}
-            <nav className="hidden lg:flex items-center space-x-8">
-              {navLinks.slice(0, 4).map((link) =>
-                link.isScroll ? (
-                  <span
-                    key={link.href}
-                    onClick={() => handleScrollLinkClick(link.href)}
-                    className={cn(
-                      "text-xs font-raleway font-medium uppercase tracking-widest transition-colors cursor-pointer",
-                      "text-author-primary hover:text-author-accent"
-                    )}
-                  >
-                    {link.label}
-                  </span>
-                ) : (
-                  <Link
-                    key={link.href}
-                    to={link.href}
-                    className={cn(
-                      "text-xs font-raleway font-medium uppercase tracking-widest transition-colors",
-                      location.pathname === link.href
-                        ? "text-author-accent"
-                        : "text-author-primary hover:text-author-accent"
-                    )}
-                  >
-                    {link.label}
-                  </Link>
-                )
-              )}
+          {/* Desktop: 3-column grid so logo is always perfectly centered */}
+          <div className="hidden lg:grid grid-cols-3 items-center h-full">
+
+            {/* Left nav */}
+            <nav className="flex items-center justify-start space-x-8">
+              {leftLinks.map((link) => renderLink(link))}
             </nav>
 
-            {/* Logo */}
-            <div className="flex-1 lg:flex-none flex justify-center lg:justify-start">
+            {/* Logo — center column */}
+            <div className="flex justify-center">
               <Link
                 to="/"
-                className="text-2xl md:text-3xl font-serif font-bold text-author-primary tracking-wide"
+                className="text-2xl md:text-3xl font-serif font-bold text-author-primary tracking-wide whitespace-nowrap"
               >
                 Venugopal Menon
               </Link>
             </div>
 
-            {/* Right Navigation */}
-            <nav className="hidden lg:flex items-center space-x-8">
-              {navLinks.slice(4).map((link) =>
-                link.isScroll ? (
-                  <span
-                    key={link.href}
-                    onClick={() => handleScrollLinkClick(link.href)}
-                    className={cn(
-                      "text-xs font-raleway font-medium uppercase tracking-widest transition-colors cursor-pointer",
-                      "text-author-primary hover:text-author-accent"
-                    )}
-                  >
-                    {link.label}
-                  </span>
-                ) : (
-                  <Link
-                    key={link.href}
-                    to={link.href}
-                    className={cn(
-                      "text-xs font-raleway font-medium uppercase tracking-widest transition-colors",
-                      location.pathname === link.href
-                        ? "text-author-accent"
-                        : "text-author-primary hover:text-author-accent"
-                    )}
-                  >
-                    {link.label}
-                  </Link>
-                )
-              )}
+            {/* Right nav */}
+            <nav className="flex items-center justify-end space-x-8">
+              {rightLinks.map((link) => renderLink(link))}
             </nav>
 
-            {/* Mobile menu button */}
+          </div>
+
+          {/* Mobile: logo left, hamburger right */}
+          <div className="lg:hidden flex items-center justify-between h-full">
+            <Link
+              to="/"
+              className="text-2xl font-serif font-bold text-author-primary tracking-wide"
+            >
+              Venugopal Menon
+            </Link>
             <button
-              className="lg:hidden p-2"
+              className="p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? (
@@ -156,51 +138,21 @@ const Navigation = () => {
               )}
             </button>
           </div>
+
         </div>
 
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white border-t border-gray-200">
             <div className="px-4 py-6 space-y-4">
-              {navLinks.map((link) =>
-                link.isScroll ? (
-                  <span
-                    key={link.href}
-                    onClick={() => handleScrollLinkClick(link.href)}
-                    className={cn(
-                      "block text-sm font-raleway font-medium uppercase tracking-widest transition-colors cursor-pointer",
-                      "text-author-primary hover:text-author-accent"
-                    )}
-                  >
-                    {link.label}
-                  </span>
-                ) : (
-                  <Link
-                    key={link.href}
-                    to={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className={cn(
-                      "block text-sm font-raleway font-medium uppercase tracking-widest transition-colors",
-                      location.pathname === link.href
-                        ? "text-author-accent"
-                        : "text-author-primary hover:text-author-accent"
-                    )}
-                  >
-                    {link.label}
-                  </Link>
-                )
-              )}
-
+              {allLinks.map((link) => renderLink(link, "block"))}
               <div className="pt-4">
                 <Button
                   asChild
                   size="sm"
                   className="w-full uppercase text-xs font-raleway tracking-widest bg-author-primary hover:bg-author-accent"
                 >
-                  <Link
-                    to="/contact"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
+                  <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                     Send Email
                   </Link>
                 </Button>
