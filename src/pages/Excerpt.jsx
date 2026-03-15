@@ -74,7 +74,7 @@ const excerptData = {
       "The city of London—the fulcrum of the British Empire, of international commerce and ocean trade—sprawls over an area of 650 square acres. London did not appear as magnificent as I had imagined it. Right in the centre of the city stand the monstrous remnants of bombed buildings surrounded by squalor, ditches and darkened walls.",
     sections: [
       {
-        heading: null,
+        heading: "Excerpts",
         paragraphs: [
           "The city of London—the fulcrum of the British Empire, of international commerce and ocean trade—sprawls over an area of 650 square acres. The highest ranking official of the city is the Mayor. A new Mayor is elected every year. The Mayor and 26 others designated 'Aldermen' and 206 ordinary Councilors administer the city which has a police force of its own identified by red and white strips of ribbon on their uniform.",
           "London did not appear as magnificent as I had imagined it. One might say there are no attractive structures at all. Right in the centre of the city stand the monstrous remnants of bombed buildings surrounded by squalor, ditches and darkened walls. Not to be seen anywhere are signs of an inclination to renovate anything anytime soon. Even the demolishing work has not been completed, let alone renovation! I remember seeing a board somewhere in the city that said, 'London Demolishing Company'.",
@@ -252,13 +252,13 @@ const Excerpt = () => {
                 {para}
               </p>
             ))}
+			<br/>
           </div>
         ))}
 		<br/>
         <div className="mt-16 pt-8 border-t border-gray-200 text-center">
           <p className="text-author-text-light italic font-serif text-lg">— End of Excerpt —</p>
         </div>
-		<br/>
       </div>
     </div>
   );
