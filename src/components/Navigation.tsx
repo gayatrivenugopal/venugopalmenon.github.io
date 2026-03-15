@@ -45,6 +45,8 @@ const Navigation = () => {
     { href: "translations", label: "Translations", isScroll: true },
     { href: "writings", label: "Articles", isScroll: true },
     { href: "/contact", label: "Contact", isScroll: false },
+	{ href: "manuscripts", label: "Manuscripts", isScroll: true },
+	{ href: "sunday", label: "Sunday Read", isScroll: true },
   ];
 
   return (
@@ -73,7 +75,7 @@ const Navigation = () => {
 
             {/* Left Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              {navLinks.slice(0, 3).map((link) =>
+              {navLinks.slice(0, 4).map((link) =>
                 link.isScroll ? (
                   <span
                     key={link.href}
@@ -114,7 +116,7 @@ const Navigation = () => {
 
             {/* Right Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              {navLinks.slice(3).map((link) =>
+              {navLinks.slice(4).map((link) =>
                 link.isScroll ? (
                   <span
                     key={link.href}

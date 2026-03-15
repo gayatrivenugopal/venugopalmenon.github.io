@@ -442,7 +442,7 @@ const Index = () => {
       </section>
 
       {/* From the Manuscript Shelf — Novel Excerpts */}
-      <section className="py-20 bg-author-bg-section">
+      <section id="manuscripts" className="py-20 bg-author-bg-section">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-author-primary mb-6 uppercase tracking-wider">
@@ -481,7 +481,7 @@ const Index = () => {
       </section>
 
       {/* Sunday Read */}
-      <section className="py-20 bg-white">
+      <section id="sunday" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-author-primary mb-6 uppercase tracking-wider">
