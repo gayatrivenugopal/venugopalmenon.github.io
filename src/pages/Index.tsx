@@ -5,9 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
-
-import { BookOpen, Award, Quote, ArrowRight, Star, FileText, Coffee } from "lucide-react";
-
+import { BookOpen, Quote, ArrowRight, Star, FileText, Coffee } from "lucide-react";
 
 const classicStories = '/assets/classic-malayalam-stories.jpg';
 const timepiece = '/assets/the-story-of-the-timepiece.jpg';
@@ -18,125 +16,94 @@ const bbMalayalam = '/assets/brahmarakshas-bhagyarekha-malayalam.png';
 const profile = '/assets/venugopal-menon.jpg';
 import theHealer from './files/the-healer.pdf';
 
-
 const Index = () => {
   const [flippedIndex, setFlippedIndex] = useState(null);
 
   const featuredWorks = [
-	{
+    {
       title: "Brahmarakshas & Bhagyarekha",
       description:
-        "Brahmarakshas is a socio-horror novella exploring how modern minds turn to \
-		faith when logic fails to explain chronic illness, death, and misfortune. \
-		It reveals the universal fear of unknown forces that haunts human existence. \
-		 Bhagyarekha tells of a lottery ticket that refuses to be discarded, weaving a \
-		mystery where fortune and misfortune blur into an otherworldly tale of life's \
-		interconnected characters and events.",
+        "Brahmarakshas is a socio-horror novella exploring how modern minds turn to faith when logic fails to explain chronic illness, death, and misfortune. It reveals the universal fear of unknown forces that haunts human existence. Bhagyarekha tells of a lottery ticket that refuses to be discarded, weaving a mystery where fortune and misfortune blur into an otherworldly tale of life's interconnected characters and events.",
       image: bb,
-	  backImage: bbMalayalam,
-	  purchaseLink: "https://www.amazon.in/-/hi/Shihabuddin-Poyithumkadavu/dp/9371793805",
+      backImage: bbMalayalam,
+      purchaseLink: "https://www.amazon.in/-/hi/Shihabuddin-Poyithumkadavu/dp/9371793805",
       year: "2025",
-	  category: ["Ratna Books"],
-	  imageClass: "max-h-25 w-full object-contain",
+      category: ["Ratna Books"],
+      imageClass: "max-h-25 w-full object-contain",
     },
-	{
+    {
       title: "The Second Marriage of Kunju Namboodiri & Other Classic Malayalam Stories",
       description:
-        "This anthology includes stories spanning four decades, showcasing \
-		the evolving social landscape of Kerala, with themes like education, \
-		freedom, and women's emancipation.",
+        "This anthology includes stories spanning four decades, showcasing the evolving social landscape of Kerala, with themes like education, freedom, and women's emancipation.",
       image: classicStories,
-	  backImage: "",
-	  purchaseLink: "https://www.amazon.in/Marriage-Namboodiri-Classic-Malayalam-Stories/dp/9365698421",
+      backImage: "",
+      purchaseLink: "https://www.amazon.in/Marriage-Namboodiri-Classic-Malayalam-Stories/dp/9365698421",
       year: "2025",
-	  category: ["Harper Perennial India", "An Imprint of HarperCollins India"],
+      category: ["Harper Perennial India", "An Imprint of HarperCollins India"],
     },
     {
       title: "Gandhi Alive",
       description:
         "A collection of memoirs based on interviews with Venkataram Kalyanam, a secretary of Mahatma Gandhi, focusing on the final years of Gandhi's life.",
       image: gandhiAlive,
-	  backImage: gandhiAliveMalayalam,
-	  purchaseLink: "https://www.amazon.in/GANDHI-ALIVE-KARASSERY-M-N/dp/9355494807",
+      backImage: gandhiAliveMalayalam,
+      purchaseLink: "https://www.amazon.in/GANDHI-ALIVE-KARASSERY-M-N/dp/9355494807",
       year: "2023",
       category: "Mathrubhumi Books",
     },
-	{
+    {
       title: "The Story of the Timepiece",
       description:
-        "A curated selection of short stories by S.K. Pottekkatt, a \
-		Jnanpith award-winning Malayalam author, that weaves \
-		through time, exploring the relationships between \
-		memory, history, and human connection.",
+        "A curated selection of short stories by S.K. Pottekkatt, a Jnanpith award-winning Malayalam author, that weaves through time, exploring the relationships between memory, history, and human connection.",
       image: timepiece,
-	  backImage: "",
-	  purchaseLink: "https://www.amazon.in/Story-Timepiece-Collection-Short-Stories/dp/9386906988/ref=tmm_hrd_swatch_0",
+      backImage: "",
+      purchaseLink: "https://www.amazon.in/Story-Timepiece-Collection-Short-Stories/dp/9386906988/ref=tmm_hrd_swatch_0",
       year: "2019",
       category: "Niyogi Books",
     }
   ];
 
   const testimonials = [
-	{
-      quote:
-        "Venugopal Menon always keeps the non-Malayali reader \
-		topmost in mind.",
+    {
+      quote: "Venugopal Menon always keeps the non-Malayali reader topmost in mind.",
       author: "Dr. Meenakshi Shivram",
       position: "Translator & Sahitya Akademi Awardee",
-	  institutionUrl: "https://www.thehindu.com/books/early-classic-stories-series-mini-krishnan-translation-odia-kannada-malayalam/article69609734.ece",
+      institutionUrl: "https://www.thehindu.com/books/early-classic-stories-series-mini-krishnan-translation-odia-kannada-malayalam/article69609734.ece",
       institution: "The Hindu",
     },
     {
-	  quote:
-		"The translator has taken care to preserve the \
-		original flavours of the stories that are rooted \
-		in specific regional milieus.",
+      quote: "The translator has taken care to preserve the original flavours of the stories that are rooted in specific regional milieus.",
       author: "Vineetha Mokkil",
       position: "Author & Assistant Editor",
-	  institutionUrl: "https://www.outlookindia.com/books/book-reviewthe-early-classics-series",
+      institutionUrl: "https://www.outlookindia.com/books/book-reviewthe-early-classics-series",
       institution: "Outlook",
     },
     {
-      quote:
-        "The Second Marriage of Kunju Namboodiri and other \
-		Classic Malayalam Stories is flavoursome as they come.",
+      quote: "The Second Marriage of Kunju Namboodiri and other Classic Malayalam Stories is flavoursome as they come.",
       author: "Anuja Chandramouli",
       position: "Author",
-	  institutionUrl: "https://www.newindianexpress.com/lifestyle/books/2025/Jun/08/rare-regional-remarkable",
+      institutionUrl: "https://www.newindianexpress.com/lifestyle/books/2025/Jun/08/rare-regional-remarkable",
       institution: "The New Indian Express",
     },
-	{
-      quote:
-        "Venugopal Menon's translation of these classic \
-		Malayalam short stories (written between 1891 and 1924) \
-		captures the spirit and \
-		cadence of that bygone era so deftly that I felt \
-		transported—immersed in a time when the Indian \
-		freedom struggle was still finding its feet.",
+    {
+      quote: "Venugopal Menon's translation of these classic Malayalam short stories captures the spirit and cadence of that bygone era so deftly that I felt transported—immersed in a time when the Indian freedom struggle was still finding its feet.",
       author: "Vinod Joseph",
       position: "Author & Lawyer",
-	  institutionUrl: "https://urlisolation.com/browser?clickId=99D81759-A323-480D-88AA-5BC3E748061B&traceToken=1751042529%3Bnewscorp_hosted%3Bhttps%3A%2Fwinnowed.blogspot.com%2F202&url=https%3A%2F%2Fwinnowed.blogspot.com%2F2025%2F06%2Fbook-review-second-marriage-of-kunju.html",
+      institutionUrl: "https://urlisolation.com/browser?clickId=99D81759-A323-480D-88AA-5BC3E748061B&traceToken=1751042529%3Bnewscorp_hosted%3Bhttps%3A%2Fwinnowed.blogspot.com%2F202&url=https%3A%2F%2Fwinnowed.blogspot.com%2F2025%2F06%2Fbook-review-second-marriage-of-kunju.html",
       institution: "Winnowed",
     },
-	{
-      quote:
-        "Menon deconstructs the stories, offers insight \
-		into their source, and, of course, proffers \
-		insights into the translation process that are \
-		sagacious enough to warrant a longer essay.",
+    {
+      quote: "Menon deconstructs the stories, offers insight into their source, and, of course, proffers insights into the translation process that are sagacious enough to warrant a longer essay.",
       author: "Mahika Dhar",
       position: "Writer",
-	  institutionUrl: "https://urlisolation.com/browser?clickId=99D81759-A323-480D-88AA-5BC3E748061B&traceToken=1751042529%3Bnewscorp_hosted%3Bhttps%3A%2Fwinnowed.blogspot.com%2F202&url=https%3A%2F%2Fwinnowed.blogspot.com%2F2025%2F06%2Fbook-review-second-marriage-of-kunju.html",
+      institutionUrl: "https://urlisolation.com/browser?clickId=99D81759-A323-480D-88AA-5BC3E748061B&traceToken=1751042529%3Bnewscorp_hosted%3Bhttps%3A%2Fwinnowed.blogspot.com%2F202&url=https%3A%2F%2Fwinnowed.blogspot.com%2F2025%2F06%2Fbook-review-second-marriage-of-kunju.html",
       institution: "Scroll.in",
     },
-	{
-      quote:
-        "The moment you start reading a story, you have no \
-		option but to read till the end. The writing is simple, \
-		clear, and accessible.",
+    {
+      quote: "The moment you start reading a story, you have no option but to read till the end. The writing is simple, clear, and accessible.",
       author: "Shevlin Sebastian",
       position: "Author & Journalist",
-	  institutionUrl: "https://www.newindianexpress.com/cities/kochi/2019/Jul/03/casting-a-timeless-spell-1998523.html",
+      institutionUrl: "https://www.newindianexpress.com/cities/kochi/2019/Jul/03/casting-a-timeless-spell-1998523.html",
       institution: "The New Indian Express",
     }
   ];
@@ -146,52 +113,41 @@ const Index = () => {
       title: "Man's best friend",
       publication: "The Hindu",
       date: "November 2020",
-	  link: "https://www.thehindu.com/opinion/open-page/mans-best-friend/article32990051.ece",
-      excerpt:
-        "Remembering how a dog was lost and found in two years and his tragic end later.",
+      link: "https://www.thehindu.com/opinion/open-page/mans-best-friend/article32990051.ece",
+      excerpt: "Remembering how a dog was lost and found in two years and his tragic end later.",
     },
-	{
+    {
       title: "When stories cease being just fiction",
       publication: "The New Indian Express",
       date: "July 2016",
-	  link: "https://www.newindianexpress.com/opinion/columns/2016/Jul/14/when-stories-cease-being-just-fiction-880603.html",
-      excerpt:
-        "A serendipitous train conversation leads to S K Pottekat's Oru Theruvinte Katha, and the realization that some fiction cuts too close to life to be called fiction at all.",
+      link: "https://www.newindianexpress.com/opinion/columns/2016/Jul/14/when-stories-cease-being-just-fiction-880603.html",
+      excerpt: "A serendipitous train conversation leads to S K Pottekat's Oru Theruvinte Katha, and the realization that some fiction cuts too close to life to be called fiction at all.",
     },
-	{
+    {
       title: "With a clear conscience",
       publication: "Deccan Herald",
       date: "July 2013",
-	  link: "https://www.deccanherald.com/features/with-clear-conscience-2270538",
-      excerpt:
-        "A corporate veteran's wry, unflinching account of how ambition, compromise, and the unwritten rules of the ladder quietly conspire to hollow out a career.",
+      link: "https://www.deccanherald.com/features/with-clear-conscience-2270538",
+      excerpt: "A corporate veteran's wry, unflinching account of how ambition, compromise, and the unwritten rules of the ladder quietly conspire to hollow out a career.",
     },
-	{
+    {
       title: "The Healer",
       publication: "National Herald",
       date: "December 2017",
-	  link: theHealer,
-      excerpt:
-        "Folk medicine's miracle cure: turning a fracture into a surgeon's nightmare.",
+      link: theHealer,
+      excerpt: "Folk medicine's miracle cure: turning a fracture into a surgeon's nightmare.",
       isPdf: true,
     }
   ];
 
-   const novelExcerpts = [
+  const novelExcerpts = [
     {
       title: "The Saga of Sweetmeat Street",
       genre: "Literary Fiction",
       teaser: "A street that outlives its people — centuries of lives, loves, and voices that history never recorded.",
       slug: "sweetmeat-street",
     },
-    {
-      title: "Soldier Kuttappan",
-      genre: "Literary Fiction",
-      teaser: "A soldier on army leave composes a furious letter to his unfaithful wife — and agonises over every word.",
-      slug: "soldier-kuttappan",
-    },
   ];
-
 
   const sundayReads = [
     {
@@ -217,19 +173,14 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-author-bg-light via-elegant-warm-gray to-elegant-cream min-h-[80vh] flex items-center">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJncmlkIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8cGF0aCBkPSJNIDYwIDAgTCAwIDAgMCA2MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjAuNSIgb3BhY2l0eT0iMC4xIi8+CiAgICA8L3BhdHRlcm4+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz4KPC9zdmc+')] opacity-30"></div>
-
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-author-primary mb-6 leading-tight">
               Bridging Cultures
-              <span className="block text-author-accent">
-                through Translation
-              </span>
+              <span className="block text-author-accent">through Translation</span>
             </h1>
             <p className="text-xl md:text-2xl text-author-text-light mb-2in leading-relaxed max-w-3xl mx-auto">
-              Renowned translator and writer bringing the richness of Malayalam
-              literature to global audiences with sensitivity and artistic
-              excellence.
+              Renowned translator and writer bringing the richness of Malayalam literature to global audiences with sensitivity and artistic excellence.
             </p>
           </div>
         </div>
@@ -246,26 +197,16 @@ const Index = () => {
               Literary translations that preserve the essence while opening new worlds
             </p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredWorks.map((work, index) => (
               <Card
                 key={index}
                 className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md flex flex-col"
-                onClick={() =>
-                  work.backImage
-                    ? setFlippedIndex(flippedIndex === index ? null : index)
-                    : null
-                }
+                onClick={() => work.backImage ? setFlippedIndex(flippedIndex === index ? null : index) : null}
                 style={{ cursor: work.backImage ? "pointer" : "default" }}
               >
                 <div className={`relative overflow-hidden rounded-t-lg ${work.imageAspect || "aspect-[3/4]"}`}>
-                  <div
-                    className={`w-full h-full transition-transform duration-700 transform-style-3d ${
-                      flippedIndex === index ? "rotate-y-180" : ""
-                    }`}
-                  >
-                    {/* FRONT */}
+                  <div className={`w-full h-full transition-transform duration-700 transform-style-3d ${flippedIndex === index ? "rotate-y-180" : ""}`}>
                     <div className="absolute w-full h-full backface-hidden">
                       <img
                         src={work.image}
@@ -273,8 +214,6 @@ const Index = () => {
                         className={`w-full h-full transition-transform duration-300 group-hover:scale-105 ${work.imageClass || "object-cover"}`}
                       />
                     </div>
-
-                    {/* BACK */}
                     <div className="absolute w-full h-full rotate-y-180 backface-hidden">
                       {work.backImage ? (
                         <img
@@ -290,41 +229,22 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-
                 <CardContent className="p-6 flex flex-col flex-1">
                   <div className="flex justify-between items-center mb-3">
-                    <Badge
-                      variant="secondary"
-                      className="bg-author-accent/10 text-author-accent border-author-accent/20 leading-snug py-2"
-                    >
+                    <Badge variant="secondary" className="bg-author-accent/10 text-author-accent border-author-accent/20 leading-snug py-2">
                       <div className="text-center">
                         {Array.isArray(work.category)
-                          ? work.category.map((line, i) => (
-                              <div key={i}>{line}</div>
-                            ))
+                          ? work.category.map((line, i) => <div key={i}>{line}</div>)
                           : work.category}
                       </div>
                     </Badge>
-                    <span className="text-sm text-author-text-light text-right font-bold">
-                      {work.year}
-                    </span>
+                    <span className="text-sm text-author-text-light text-right font-bold">{work.year}</span>
                   </div>
-
-                  <h3 className="text-xl font-serif font-bold text-author-primary mb-3">
-                    {work.title}
-                  </h3>
-
-                  <p className="text-author-text-light leading-relaxed mb-4">
-                    {work.description}
-                  </p>
-
+                  <h3 className="text-xl font-serif font-bold text-author-primary mb-3">{work.title}</h3>
+                  <p className="text-author-text-light leading-relaxed mb-4">{work.description}</p>
                   <div className="mt-auto flex justify-center">
                     {work.purchaseLink && (
-                      <Button
-                        asChild
-                        size="sm"
-                        className="bg-author-accent/80 hover:bg-author-accent/90 text-white font-semibold py-2 px-6 rounded shadow-md transition flex items-center gap-2"
-                      >
+                      <Button asChild size="sm" className="bg-author-accent/80 hover:bg-author-accent/90 text-white font-semibold py-2 px-6 rounded shadow-md transition flex items-center gap-2">
                         <a href={work.purchaseLink} target="_blank" rel="noopener noreferrer">
                           <ShoppingCart className="h-4 w-4" />
                           Buy Now
@@ -356,8 +276,7 @@ const Index = () => {
               alt="Venugopal Menon"
               className="w-40 h-40 rounded-full shadow-md object-cover border-4 border-author-accent"
             />
-          </div><br/><br/>
-
+          </div><br /><br />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="border-0 shadow-md bg-white">
@@ -367,19 +286,10 @@ const Index = () => {
                     "{testimonial.quote}"
                   </p>
                   <div className="border-t pt-6">
-                    <p className="font-raleway font-semibold text-author-primary mb-1">
-                      {testimonial.author}
-                    </p>
-                    <p className="text-sm text-author-text-light">
-                      {testimonial.position}
-                    </p>
+                    <p className="font-raleway font-semibold text-author-primary mb-1">{testimonial.author}</p>
+                    <p className="text-sm text-author-text-light">{testimonial.position}</p>
                     <p className="text-sm text-author-accent font-medium">
-                      <a
-                        href={testimonial.institutionUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline"
-                      >
+                      <a href={testimonial.institutionUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
                         {testimonial.institution}
                       </a>
                     </p>
@@ -391,7 +301,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Recent Press Coverage */}
+      {/* In the Press */}
       <section id="writings" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -399,13 +309,9 @@ const Index = () => {
               In the Press
             </h2>
           </div>
-          <center>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {recentArticles.map((article, index) => (
-              <Card
-                key={index}
-                className="border-0 shadow-md hover:shadow-lg transition-shadow"
-              >
+              <Card key={index} className="border-0 shadow-md hover:shadow-lg transition-shadow">
                 <CardContent className="p-8 flex flex-col h-full">
                   <div className="mb-4">
                     <div className="flex items-center gap-2 mb-4">
@@ -414,21 +320,12 @@ const Index = () => {
                         {article.publication}
                       </span>
                     </div>
-                    <h3 className="text-xl font-serif font-bold text-author-primary mb-3 leading-tight">
-                      {article.title}
-                    </h3>
-                    <p className="text-author-text-light leading-relaxed">
-                      {article.excerpt}
-                    </p>
+                    <h3 className="text-xl font-serif font-bold text-author-primary mb-3 leading-tight">{article.title}</h3>
+                    <p className="text-author-text-light leading-relaxed">{article.excerpt}</p>
                   </div>
                   <div className="mt-auto flex items-center justify-between pt-4 border-t border-gray-100">
                     <span className="font-bold text-sm text-author-text-light">{article.date}</span>
-                    <Button
-                      asChild
-                      variant="ghost"
-                      size="sm"
-                      className="text-author-accent hover:text-author-primary font-raleway uppercase tracking-wider p-0"
-                    >
+                    <Button asChild variant="ghost" size="sm" className="text-author-accent hover:text-author-primary font-raleway uppercase tracking-wider p-0">
                       <a href={article.link} target="_blank" rel="noopener noreferrer">
                         Read Article <ArrowRight className="ml-2 h-4 w-4" />
                       </a>
@@ -438,11 +335,10 @@ const Index = () => {
               </Card>
             ))}
           </div>
-          </center>
         </div>
       </section>
 
-      {/* From the Manuscript Shelf — Novel Excerpts */}
+      {/* From the Manuscript Shelf */}
       <section id="manuscripts" className="py-20 bg-author-bg-section">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -450,7 +346,7 @@ const Index = () => {
               From the Manuscript Shelf
             </h2>
             <p className="text-xl text-author-text-light max-w-2xl mx-auto">
-              Manuscripts that have not found their home yet
+              Manuscripts that haven't found their home yet.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -467,9 +363,7 @@ const Index = () => {
                     <h3 className="text-xl font-serif font-bold text-author-primary mb-3 leading-tight group-hover:text-author-accent transition-colors duration-200">
                       {item.title}
                     </h3>
-                    <p className="text-author-text-light leading-relaxed flex-1">
-                      {item.teaser}
-                    </p>
+                    <p className="text-author-text-light leading-relaxed flex-1">{item.teaser}</p>
                     <div className="mt-6 flex items-center text-author-accent font-raleway text-sm uppercase tracking-wider font-semibold">
                       Read Excerpt <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
                     </div>
@@ -506,9 +400,7 @@ const Index = () => {
                     <h3 className="text-xl font-serif font-bold text-author-primary mb-3 leading-tight group-hover:text-author-accent transition-colors duration-200">
                       {item.title}
                     </h3>
-                    <p className="text-author-text-light leading-relaxed flex-1">
-                      {item.teaser}
-                    </p>
+                    <p className="text-author-text-light leading-relaxed flex-1">{item.teaser}</p>
                     <div className="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 mt-6">
                       <span className="text-sm font-bold text-author-text-light">{item.date}</span>
                       <div className="flex items-center text-author-accent font-raleway text-sm uppercase tracking-wider font-semibold">
@@ -523,32 +415,20 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Call to Action Section */}
+      {/* Call to Action */}
       <section className="py-20 bg-author-primary text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-            Let's Connect
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Let's Connect</h2>
           <p className="text-xl mb-8 text-gray-300 leading-relaxed">
             Publishers, fellow authors, and readers with an interest in literary translation are welcome to reach out via email.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              asChild
-              size="lg"
-              variant="secondary"
-              className="bg-author-accent hover:bg-elegant-gold text-author-primary px-8 py-3 text-lg font-raleway uppercase tracking-wider"
-            >
+            <Button asChild size="lg" variant="secondary" className="bg-author-accent hover:bg-elegant-gold text-author-primary px-8 py-3 text-lg font-raleway uppercase tracking-wider">
               <Link to="/contact">
                 Send Email <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white text-black hover:text-author-primary px-8 py-3 text-lg font-raleway uppercase tracking-wider"
-            >
+            <Button asChild size="lg" variant="outline" className="border-white text-black hover:text-author-primary px-8 py-3 text-lg font-raleway uppercase tracking-wider">
               <Link to="/about">Learn More</Link>
             </Button>
           </div>
