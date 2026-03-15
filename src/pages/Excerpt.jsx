@@ -9,7 +9,7 @@ const excerptData = {
     genre: "Literary Fiction",
     sections: [
       {
-        heading: "Excerpts",
+        heading: null,
         paragraphs: [
           "Once on the day after the man had left, Ayesha was seated on the patio plucking lice off her head, her hair spread out, lost in thought. Then Perikalan Andru stealthily went and sat in another corner of that patio and casting his eyes into the street thought up a ditty and began to sing:",
           "'Aaayissa beebiyekkangaan / Aasha moothu—mandiyethum / Payasa kothiyanoru / Pandikaadan Kakka! / Pathu kadam bayi nadannu / Kalu random suttedutha pathiriyayee—mooppororu / Pothumbandikkaran…'",
@@ -97,7 +97,8 @@ const Excerpt = () => {
             ))}
           </div>
         ))}
-
+		
+		<br/>
         <div className="mt-16 pt-8 border-t border-gray-200 text-center">
           <p className="text-author-text-light italic font-serif text-lg">— End of Excerpt —</p>
         </div>
