@@ -449,7 +449,7 @@ const Index = () => {
               From the Manuscript Shelf
             </h2>
             <p className="text-xl text-author-text-light max-w-2xl mx-auto">
-              Manuscripts that haven't found their home yet.
+              Manuscripts that have not found their home yet
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
