@@ -9,12 +9,6 @@ const excerptData = {
     genre: "Literary Fiction",
     sections: [
       {
-        heading: null,
-        paragraphs: [
-          "They were once human beings of flesh and blood. These people, every one of them, having played their role on the stage of life withdrew behind the eternal curtains. Into coffins, graves, pyres or just soil, these people vanished. Their names, not even the name of one of them, can be seen in the annals of history. But the street which was once awash with the voices and scents of these people still lives on, grinning mirthlessly. Fresh costumes appear and new roles are being played here now. New footprints expunge the old. This story, thus, is played out perennially through centuries.",
-        ],
-      },
-      {
         heading: "Excerpts",
         paragraphs: [
           "Once on the day after the man had left, Ayesha was seated on the patio plucking lice off her head, her hair spread out, lost in thought. Then Perikalan Andru stealthily went and sat in another corner of that patio and casting his eyes into the street thought up a ditty and began to sing:",
