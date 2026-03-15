@@ -99,10 +99,10 @@ const Excerpt = () => {
             ))}
           </div>
         ))}
-
+		<br/>
         <div className="mt-16 pt-8 border-t border-gray-200 text-center">
           <p className="text-author-text-light italic font-serif text-lg">— End of Excerpt —</p>
-        </div>
+        </div><br/>
 
       </div>
     </div>
