@@ -72,7 +72,7 @@ const sundayData = {
           "On my first visit to that spot in the latter half of a month of June, I enquired why the place was so noisy with the screeching of birds which made even speech difficult - why the earth smelled like the attic of my ancestral home defying the petrichor of the recent drizzle—and why nobody shoos these birds away; I was then told that even to pelt a stone at the birds invites prosecution because the birds were migratory and fly in from thousands of miles away once during the course of a year and that the nondescript railway station premises had been gazetted a sanctuary of sorts.",
           "In his natural wisdom my neighbour parked his car at our one-street town railway station grounds to take a train to the nearest city because, he advised me, it made more sense than driving the car for an hour and a half, conforming to speed limits, all the while bracing for CCTV cameras and speed guns along the highway, breathing in the fumes emitted by long distance diesel trucks and kerosene improvised motorcycles.",
           "The day I saw him return at dusk in a strange car that resembled his own in shape and manner but was the colour of a bright summer cloud—was the last day my venerable neighbour took a train to town.",
-		  "<sup>1</sup>Petrichor is the distinctive smell of the earth that accompanies the first rain after a warm spell.",	
+		  "(Petrichor is the distinctive smell of the earth that accompanies the first rain after a warm spell.)",	
 		],
       },
     ],
