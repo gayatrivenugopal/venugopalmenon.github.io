@@ -23,6 +23,35 @@ const sundayData = {
           "May be now I know what I was waiting for. It certainly wasn't a soul mate that would weep her blue eyes sore as I departed. It wasn't accolades of success. It wasn't renunciation for the betterment of the race. It wasn't self realization in a form of self denial to self-efface and surrender to the will and the desires of others -- to refrain from self aggrandizement.",
           "Or was it?",
           "I had crossed the primal frontier of my life.",
+          "—Venu",
+        ],
+      },
+    ],
+  },
+
+  "night-rider": {
+    title: "Night Rider",
+    publication: "Sunday Supplement",
+    date: "Aug. 14, 2014",
+    sections: [
+      {
+        heading: null,
+        paragraphs: [
+          "'Adrenalin rush' is a clichéd phrase. So much so that one fears to repeat the usage. Leave the hormones and their play to the biologist and his ilk. What do I know about what happens within my body except through the ominous articles on the wellness pages of magazines and their supplementary issues on health? But this rush of hormones is what keeps us going. Wanting to do more of the same thing so that mystery hormone rushes again, to wherever it wants to go, giving the incumbent, the sensation of joy, pride, dignity and a sense of accomplishment that is rare to find in commonplace living. With recurrent acts that invoke this intangible rush, we get somewhere in life.",
+          "In the line of engineering sales that I was engaged in, it was primarily my duty to enhance sales. Besides the usual 'killing' we made through negotiations and 'overcoming objections' to 'close' sales, we extended value added services through shop floor assistance rendered through the service wing of our Company, which engaged trained technicians for the purpose.",
+          "Being pioneers in the country for equipment in the given field of our endeavor, the intermittent launch of newer and exotic Processes was a given. The operation of these Processes was the domain of the technicians who were specifically inducted to use them. We, the sales wizards, were merely shown demonstrations of these Processes and allowed to toy around with them at our Training Institute, during Product Launch programs.",
+          "When confronted with a situation at the biggest enterprise in the country that was engaged in the installation of the power plants, it fell upon me to take a decision that years later evokes a pride in me that I wallow in, on rumination. To elaborate, a rather huge part of a Power Station component was machined (inadvertently) in excess by a few microns and the finished part needed to be assembled and dispatched for commissioning at a project situated a tens and hundreds of miles away to minimize huge downtime losses. One of our Processes could solve the problem through building up the lost microns of the alloy. As a 'Sales Engineer' the only recourse expected of me was to hotline our head quarters also situated a thousand miles away to airlift a technician to do the job.",
+          "Not doing the job right then or failure to do it right would have resulted in humongous losses to the supplier behemoth and the Project faraway would have stalled; and a few innocent heads on either side could have, proverbially, rolled. Time was of the essence. At dusk that day, I took that crucial decision and said I would play the role of Technician and engage our new Process to solve the problem whereby the assembly could begin its several-day long transportation the very next morning. This naturally meant that from dusk to dawn the next day, I would be at the workshop manually operating oxy-acetylene Equipment for the replenishing of the few microns of alloy, the loss of which had put a whole Company in a quandary.",
+          "\"For want of a nail, the kingdom was lost\"—such was the situation.",
+          "Briefly put, the job was accomplished successfully. The assembled component began its historic journey the next morning with a horde of beaming staff waving to speed it along.",
+          "It was perhaps the most important night of my service life of thirty years, whilst other accolades too did come my way without inciting even a tinge of pride in me.",
+          "I now realize what had driven me to take up that risky decision so many years ago. It was the motivation that emanated from a few reflections that pervaded my very conscience:",
+          "—The reputation of a large public sector enterprise was at stake – a Hydel Project would have come to a stand-still for want of the timely delivery of the assembly.",
+          "—A group of people spanning several levels in the Company's hierarchy waited for the result of my work, with bated breath.",
+          "—Working for the benefit of others through the night while the world slept made me feel important in a noble, yet humble manner.",
+          "—I needed to reassure myself that I could do what most couldn't. I knew that even our own technicians had shunned using the Process I used that day, dreading failure.",
+          "Above all, I felt wanted.",
+          "—Venu",
         ],
       },
     ],
@@ -46,6 +75,7 @@ const sundayData = {
           "(Petrichor is the distinctive smell of the earth that accompanies the first rain after a warm spell.)",
           "In his natural wisdom my neighbour parked his car at our one-street town railway station grounds to take a train to the nearest city because, he advised me, it made more sense than driving the car for an hour and a half, conforming to speed limits, all the while bracing for CCTV cameras and speed guns along the highway, breathing in the fumes emitted by long distance diesel trucks and kerosene improvised motorcycles.",
           "The day I saw him return at dusk in a strange car that resembled his own in shape and manner but was the colour of a bright summer cloud—was the last day my venerable neighbour took a train to town.",
+          "—Venu",
         ],
       },
     ],
@@ -97,7 +127,7 @@ const SundayRead = () => {
             ))}
           </div>
         ))}
-		<br/>
+
         <div className="mt-16 pt-8 border-t border-gray-200 text-center">
           <p className="text-author-text-light italic font-serif text-lg">— End of Article —</p>
         </div>

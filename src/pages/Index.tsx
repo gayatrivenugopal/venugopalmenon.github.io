@@ -163,7 +163,14 @@ const Index = () => {
       teaser: "A fever, a borrowed car, a missed warning — and the moment that changed everything.",
       slug: "primal-frontier",
     },
-    {
+	{
+      title: "Night Rider",
+      publication: "Sunday Supplement",
+      date: "Aug 14, 2014",
+      teaser: "From dusk to dawn, one engineer takes a risky decision that no technician dared — and saves a power project single-handedly.",
+      slug: "night-rider",
+    },
+	{
       title: "The Flightless Ibis",
       publication: "Sunday Supplement",
       date: "Nov 06, 2020",
