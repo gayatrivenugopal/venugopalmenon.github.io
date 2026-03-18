@@ -117,7 +117,7 @@ const Index = () => {
       excerpt: "Remembering how a dog was lost and found in two years and his tragic end later.",
     },
 	{
-      title: "The Healer",
+      title: "The healer",
       publication: "National Herald",
       date: "December 2017",
       link: theHealer,
