@@ -20,10 +20,9 @@ const sundayData = {
           "I sat through the movie peeved that I wasn't given the wheel on the way up. Fortune smiled when, on coming out of the theatre, the makeshift parking area was choc-a-block full with bicycles and the car was lost in a maze of handle bars and multi hued seat covers of many bicycles. So it naturally came upon me to maneuver the car out of the unruly crowd of movie goers and it was unseemly that I hand over the wheel to someone else after this awe-inspiring feat.",
           "Before the busy part of the small town was left behind, another vehicle joined our route and kept pace with our car, goading us to move faster to match its superior adeptness at speed. I have often wondered how some morbid past catches up with us, entwines itself into pride and deep need to prove something and leads us on to doom. Why did I do it? By the end of the two minutes that took to cover a mile we were speeding neck to neck and before we realized it, the odometer was hovering around fifty five miles per hour as we approached a delectably smooth curve ahead. The trees in the trenches on both sides of the road bore mute witness to this foolhardy exhibition of driving prowess. At the curve that I relished every time I passed through it, as we were edging past the monster racing against us, a cyclist swerved onto our path firm in his belief that vehicles on the road must make way for carefree cyclists, in compliance with the rules of providence. He did not hear the death roar of two engines behind him and our car saw him too late for a disdainful stop. I slammed my right foot on the brake pedal as hard as I feverishly could. Father had warned, and the son had heeded not. This time too the brakes on the left side did not hold. At around sixty miles an hour the car hurtled off the road onto a tree almost fifteen feet perpendicularly away from the road and with a crash that resounded a kilometer away, it wrapped itself around the trunk of the tree in a mangled heap of metal.",
           "Blood, broken bones, people lay sprawled on the road. In an instant of sheer conceit and bravado, I had made a mark for a life time in the minds of all around me and on my own person and mutilated a future that might have been streamlined with careful and humble living. That one moment took away from my life the sunshine, the dewy grass, the blue skies and the joyous smells of my guileless youth.",
-          "May be now I know what I was waiting for. It certainly wasn't a soul mate that would weep her blue eyes sore as I departed. It wasn't accolades of success. It wasn't renunciation for the betterment of the race. It wasn't self realization in a form of self denial to self-efface and surrender to the will and the desires of others -- to refrain from self aggrandizement.",
+          "May be now I know what I was waiting for. It certainly wasn't a soul mate that would weep her blue eyes sore as I departed. It wasn't accolades of success. It wasn't renunciation for the betterment of the race. It wasn't self realization in a form of self denial to self-efface and surrender to the will and the desires of others - to refrain from self aggrandizement.",
           "Or was it?",
           "I had crossed the primal frontier of my life.",
-          "—Venu",
         ],
       },
     ],
@@ -51,7 +50,6 @@ const sundayData = {
           "—Working for the benefit of others through the night while the world slept made me feel important in a noble, yet humble manner.",
           "—I needed to reassure myself that I could do what most couldn't. I knew that even our own technicians had shunned using the Process I used that day, dreading failure.",
           "Above all, I felt wanted.",
-          "—Venu",
         ],
       },
     ],
@@ -71,11 +69,10 @@ const sundayData = {
           "Before I shifted from a city to a lacklustre south Indian village to perish and turn to dust dutifully in the purported peace of the village, I had heard the name of Ibis. At a stone's throw from my house was a not so highly rated hotel called Ibis, a name which boasts a chain of similar hotels in several countries around the world. I did not know then that Ibis was the name of a unique bird.",
           "The tiny railway station of my village has been thoughtfully designed—with a track that glimmers north and another that takes rakes down south, both of which have platforms along them for people to embark and disembark the trains which deign to stop there—the numbers of which can be counted on the fingers of a single right hand—Ekalavya's. There is one more track between these two which is for all the trains which do not stop at our geographical indicator, the quaint railway station (a schedule that ensured perennial cleanliness of the premises) manned by two men, a lady and populated by a thousand Ibis birds, which perch not atop the station building but on the huge trees of unknown vintage the tops of which form a canopy over the area where cars are parked.",
           "The ground beneath these trees looks paved with limestone as the birds, some egrets included, relieve themselves from atop the highest sprigs through the gaps in the branches not soiling one of them only to pave and paint what is below them in pristine white. When at rest and dropping crap the Ibis becomes flightless but hardly extinct.",
-          "On my first visit to that spot in the latter half of a month of June, I enquired why the place was so noisy with the screeching of birds which made even speech difficult -- why the earth smelled like the attic of my ancestral home defying the petrichor of the recent drizzle—and why nobody shoos these birds away; I was then told that even to pelt a stone at the birds invites prosecution because the birds were migratory and fly in from thousands of miles away once during the course of a year and that the nondescript railway station premises had been gazetted a sanctuary of sorts.",
+          "On my first visit to that spot in the latter half of a month of June, I enquired why the place was so noisy with the screeching of birds which made even speech difficult - why the earth smelled like the attic of my ancestral home defying the petrichor of the recent drizzle—and why nobody shoos these birds away; I was then told that even to pelt a stone at the birds invites prosecution because the birds were migratory and fly in from thousands of miles away once during the course of a year and that the nondescript railway station premises had been gazetted a sanctuary of sorts.",
           "(Petrichor is the distinctive smell of the earth that accompanies the first rain after a warm spell.)",
           "In his natural wisdom my neighbour parked his car at our one-street town railway station grounds to take a train to the nearest city because, he advised me, it made more sense than driving the car for an hour and a half, conforming to speed limits, all the while bracing for CCTV cameras and speed guns along the highway, breathing in the fumes emitted by long distance diesel trucks and kerosene improvised motorcycles.",
           "The day I saw him return at dusk in a strange car that resembled his own in shape and manner but was the colour of a bright summer cloud—was the last day my venerable neighbour took a train to town.",
-          "—Venu",
         ],
       },
     ],
@@ -127,7 +124,7 @@ const SundayRead = () => {
             ))}
           </div>
         ))}
-
+		<br/>
         <div className="mt-16 pt-8 border-t border-gray-200 text-center">
           <p className="text-author-text-light italic font-serif text-lg">— End of Article —</p>
         </div>

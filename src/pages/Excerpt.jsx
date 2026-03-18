@@ -124,7 +124,7 @@ const excerptData = {
           "'No. I have come from India to see Europe.'",
           "She looked me all over once again mildly surprised.",
           "(So this bloke must be an Indian prince or a Kuberan [the God of riches]—her mind must be whispering.)",
-          "'Are you a Maharaja?' she asked me candidly.",
+          "She asked me candidly, 'Are you a Maharaja?'",
           "'Not exactly. But thereabout.' I said assuming a dignified manner.",
           "(A Maharaj lived near my house in Kozhikode. Mithaikaran Maharaj [Vendor of sweet meats]. My proximity to a Maharaja was confined to that).",
           "That Negro lass's curiosity was on fire.",
