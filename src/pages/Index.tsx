@@ -116,6 +116,14 @@ const Index = () => {
       link: "https://www.thehindu.com/opinion/open-page/mans-best-friend/article32990051.ece",
       excerpt: "Remembering how a dog was lost and found in two years and his tragic end later.",
     },
+	{
+      title: "The Healer",
+      publication: "National Herald",
+      date: "December 2017",
+      link: theHealer,
+      excerpt: "Folk medicine's miracle cure: turning a fracture into a surgeon's nightmare.",
+      isPdf: true,
+    },
     {
       title: "When stories cease being just fiction",
       publication: "The New Indian Express",
@@ -130,14 +138,6 @@ const Index = () => {
       link: "https://www.deccanherald.com/features/with-clear-conscience-2270538",
       excerpt: "A corporate veteran's wry, unflinching account of how ambition, compromise, and the unwritten rules of the ladder quietly conspire to hollow out a career.",
     },
-    {
-      title: "The Healer",
-      publication: "National Herald",
-      date: "December 2017",
-      link: theHealer,
-      excerpt: "Folk medicine's miracle cure: turning a fracture into a surgeon's nightmare.",
-      isPdf: true,
-    }
   ];
 
   const novelExcerpts = [
