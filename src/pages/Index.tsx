@@ -211,51 +211,73 @@ const Index = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredWorks.map((work, index) => (
-              <Card
-                key={index}
-                className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md flex flex-col"
-                onClick={() => work.backImage ? setFlippedIndex(flippedIndex === index ? null : index) : null}
-                style={{ cursor: work.backImage ? "pointer" : "default" }}
-              >
-                <div className={`relative rounded-t-lg ${work.imageAspect || "aspect-[3/4]"}`}>
-                  <div className={`w-full h-full transition-transform duration-700 transform-style-3d ${flippedIndex === index ? "rotate-y-180" : ""}`}>
-                    <div className="absolute w-full h-full backface-hidden">
-                      <img src={work.image} alt={work.title} className={`w-full h-full transition-transform duration-300 group-hover:scale-105 ${work.imageClass || "object-cover"}`} />
-                    </div>
-                    <div className="absolute w-full h-full rotate-y-180 backface-hidden">
-					  {work.backImage ? (
-						<img src={work.backImage} alt={`${work.title} Back Cover`} className={`w-full h-full transition-transform duration-300 group-hover:scale-105 ${work.imageClass || "object-cover"}`} />
-					  ) : (
-						<div className="w-full h-full bg-gray-100 flex items-center justify-center text-gray-500">No Back Cover</div>
-					  )}
-					</div>
-                  </div>
-                </div>
-                <CardContent className="p-6 flex flex-col flex-1">
-                  <div className="flex justify-between items-center mb-3">
-                    <Badge variant="secondary" className="bg-author-accent/10 text-author-accent border-author-accent/20 leading-snug py-2">
-                      <div className="text-center">
-                        {Array.isArray(work.category) ? work.category.map((line, i) => <div key={i}>{line}</div>) : work.category}
-                      </div>
-                    </Badge>
-                    <span className="text-sm text-author-text-light text-right font-bold">{work.year}</span>
-                  </div>
-                  <h3 className="text-xl font-serif font-bold text-author-primary mb-3">{work.title}</h3>
-                  <p className="text-author-text-light leading-relaxed mb-4">{work.description}</p>
-                  <div className="mt-auto flex justify-center">
-                    {work.purchaseLink && (
-                      <Button asChild size="sm" className="bg-author-accent/80 hover:bg-author-accent/90 text-white font-semibold py-2 px-6 rounded shadow-md transition flex items-center gap-2">
-                        <a href={work.purchaseLink} target="_blank" rel="noopener noreferrer">
-                          <ShoppingCart className="h-4 w-4" /> Buy Now
-                        </a>
-                      </Button>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+  {featuredWorks.map((work, index) => (
+    <Card
+      key={index}
+      className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md flex flex-col"
+      onClick={() => work.backImage ? setFlippedIndex(flippedIndex === index ? null : index) : null}
+      style={{ cursor: work.backImage ? "pointer" : "default" }}
+    >
+      <div className={`relative rounded-t-lg ${work.imageAspect || "aspect-[3/4]"}`}>
+        <div className={`w-full h-full transition-transform duration-700 transform-style-3d ${flippedIndex === index ? "rotate-y-180" : ""}`}>
+          {/* FRONT */}
+          <div className="absolute w-full h-full backface-hidden overflow-hidden rounded-t-lg">
+            <img
+              src={work.image}
+              alt={work.title}
+              className={`w-full h-full transition-transform duration-300 group-hover:scale-105 ${work.imageClass || "object-cover"}`}
+            />
           </div>
+          {/* BACK */}
+          <div className="absolute w-full h-full rotate-y-180 backface-hidden overflow-hidden rounded-t-lg">
+            {work.backImage ? (
+              <img
+                src={work.backImage}
+                alt={`${work.title} Back Cover`}
+                className={`w-full h-full transition-transform duration-300 group-hover:scale-105 ${work.imageClass || "object-cover"}`}
+              />
+            ) : (
+              <div className="w-full h-full bg-gray-100 flex items-center justify-center text-gray-500">
+                No Back Cover
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Overlay hint */}
+        {work.backImage && (
+          <div className="absolute inset-x-0 bottom-4 z-10 flex justify-center">
+            <span className="bg-black/50 text-white text-xs font-raleway italic px-3 py-1 rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-300">
+              {flippedIndex === index ? "Click to see the translation" : "Click to see the original"}
+            </span>
+          </div>
+        )}
+      </div>
+
+      <CardContent className="p-6 flex flex-col flex-1">
+        <div className="flex justify-between items-center mb-3">
+          <Badge variant="secondary" className="bg-author-accent/10 text-author-accent border-author-accent/20 leading-snug py-2">
+            <div className="text-center">
+              {Array.isArray(work.category) ? work.category.map((line, i) => <div key={i}>{line}</div>) : work.category}
+            </div>
+          </Badge>
+          <span className="text-sm text-author-text-light text-right font-bold">{work.year}</span>
+        </div>
+        <h3 className="text-xl font-serif font-bold text-author-primary mb-3">{work.title}</h3>
+        <p className="text-author-text-light leading-relaxed mb-4">{work.description}</p>
+        <div className="mt-auto flex justify-center">
+          {work.purchaseLink && (
+            <Button asChild size="sm" className="bg-author-accent/80 hover:bg-author-accent/90 text-white font-semibold py-2 px-6 rounded shadow-md transition flex items-center gap-2">
+              <a href={work.purchaseLink} target="_blank" rel="noopener noreferrer">
+                <ShoppingCart className="h-4 w-4" /> Buy Now
+              </a>
+            </Button>
+          )}
+        </div>
+      </CardContent>
+    </Card>
+  ))}
+</div>
         </div>
       </section>
 
