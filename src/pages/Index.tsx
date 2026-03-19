@@ -231,6 +231,11 @@ const Index = () => {
 					   )}
                     </div>
                   </div>
+				  {work.backImage && (
+					  <div className="absolute inset-x-0 bottom-0 bg-black/40 text-white text-xs font-raleway italic text-center py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+						Click to see the original
+					  </div>
+					)}
                 </div>
                 <CardContent className="p-6 flex flex-col flex-1">
                   <div className="flex justify-between items-center mb-3">
