@@ -225,7 +225,7 @@ const Index = () => {
                     </div>
                     <div className="absolute w-full h-full rotate-y-180 backface-hidden">
                       {work.backImage && (
-						  <div className="absolute inset-x-0 bottom-2 bg-black/40 text-white text-xs font-raleway italic text-center py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+						  <div className="absolute inset-x-0 bottom-6 bg-black/40 text-white text-xs font-raleway italic text-center py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
 							{flippedIndex === index ? "Click to see the translation" : "Click to see the original"}
 						  </div>
 					   )}
