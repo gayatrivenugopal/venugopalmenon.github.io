@@ -218,7 +218,7 @@ const Index = () => {
                 onClick={() => work.backImage ? setFlippedIndex(flippedIndex === index ? null : index) : null}
                 style={{ cursor: work.backImage ? "pointer" : "default" }}
               >
-                <div className={`relative overflow-hidden rounded-t-lg ${work.imageAspect || "aspect-[3/4]"}`}>
+                <div className={`relative rounded-t-lg ${work.imageAspect || "aspect-[3/4]"}`}>
                   <div className={`w-full h-full transition-transform duration-700 transform-style-3d ${flippedIndex === index ? "rotate-y-180" : ""}`}>
                     <div className="absolute w-full h-full backface-hidden">
                       <img src={work.image} alt={work.title} className={`w-full h-full transition-transform duration-300 group-hover:scale-105 ${work.imageClass || "object-cover"}`} />
