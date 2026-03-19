@@ -230,13 +230,13 @@ const Index = () => {
                         <div className="w-full h-full bg-gray-100 flex items-center justify-center text-gray-500">No Back Cover</div>
                       )}
                     </div>
-					{work.backImage && (
-						<p className="text-xs text-author-text-light font-raleway italic">
-						  Click to see the original
-						</p>
-					  )}
                   </div>
                 </div>
+				{work.backImage && (
+				  <p className="text-xs text-author-text-light font-raleway italic text-center py-2 bg-gray-50">
+					Click to see the original
+				  </p>
+				)}
                 <CardContent className="p-6 flex flex-col flex-1">
                   <div className="flex justify-between items-center mb-3">
                     <Badge variant="secondary" className="bg-author-accent/10 text-author-accent border-author-accent/20 leading-snug py-2">
