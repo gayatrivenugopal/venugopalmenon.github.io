@@ -246,7 +246,7 @@ const Index = () => {
 
         {/* Overlay hint */}
         {work.backImage && (
-          <div className="absolute inset-x-0 bottom-20 z-10 flex justify-center">
+          <div className="absolute inset-x-0 bottom-26 z-10 flex justify-center">
             <span className="bg-black/50 text-white text-xs font-raleway italic px-3 py-1 rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-300">
               {flippedIndex === index ? "Click to see the translation" : "Click to see the original"}
             </span>
