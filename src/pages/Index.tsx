@@ -65,6 +65,14 @@ const Index = () => {
 
   const testimonials = [
     {
+      quote: "I congratulate Venugopal Menon heartily for taking up the challenge – \
+	  it is no small one, I know, from my own experience of translating Shihabuddin's work.",
+      author: "J. Devika",
+      position: "Historian and Translator",
+      institutionUrl: "https://www.amazon.in/Ratna-Books-Brahmarakshas-Shihabuddin-Poyithumkadavu/dp/9371793805",
+      institution: "Endorsement",
+    },
+	{
       quote: "Venugopal Menon always keeps the non-Malayali reader topmost in mind.",
       author: "Dr. Meenakshi Shivram",
       position: "Translator & Sahitya Akademi Awardee",
