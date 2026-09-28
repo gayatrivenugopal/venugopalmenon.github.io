@@ -129,8 +129,8 @@ const Index = () => {
   const videoTestimonials = [
     {
       videoId: "iS_ZeN-vzXg",
-      title: "The Literary Clinic - Kalampedia",
-      caption: "Reading Classic Malayalam Short Stories",
+      title: "Video title goes here",
+      caption: "Short description or speaker name goes here",
     },
   ].filter((v) => v.videoId);
 
