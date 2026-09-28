@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
-import { BookOpen, Quote, ArrowRight, FileText, Coffee } from "lucide-react";
+import { BookOpen, Quote, ArrowRight, FileText, Coffee, Play } from "lucide-react";
 import theHealer from './files/the-healer.pdf';
 
 const classicStories = '/assets/classic-malayalam-stories.jpg';
@@ -123,14 +123,14 @@ const Index = () => {
     }
   ];
 
-  // YouTube videos shown under "What Others Say".
+  // YouTube videos shown under "What Others Say" (thumbnail card that opens YouTube in a new tab).
   // videoId is the part after "v=" in a YouTube link (youtube.com/watch?v=VIDEO_ID)
   // or after "youtu.be/". Entries with an empty videoId are not rendered.
   const videoTestimonials = [
     {
       videoId: "iS_ZeN-vzXg",
-      title: "The Literary Clinic - Kalampedia",
-      caption: "Reading Classic Malayalam Short Stories",
+      title: "Video title goes here",
+      caption: "Short description or speaker name goes here",
     },
   ].filter((v) => v.videoId);
 
@@ -342,27 +342,38 @@ const Index = () => {
           {videoTestimonials.length > 0 && (
             <div className="mt-16 grid grid-cols-1 gap-8 max-w-4xl mx-auto">
               {videoTestimonials.map((video, index) => (
-                <Card key={index} className="border-0 shadow-md bg-white overflow-hidden">
-                  <div className="aspect-video w-full">
-                    <iframe
-                      className="w-full h-full"
-                      src={`https://www.youtube-nocookie.com/embed/${video.videoId}`}
-                      title={video.title}
-                      loading="lazy"
-                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                    />
-                  </div>
-                  {(video.title || video.caption) && (
-                    <CardContent className="p-6 text-center">
-                      <p className="font-raleway font-semibold text-author-primary">{video.title}</p>
-                      {video.caption && (
-                        <p className="text-sm text-author-text-light mt-1">{video.caption}</p>
-                      )}
-                    </CardContent>
-                  )}
-                </Card>
+                <a
+                  key={index}
+                  href={`https://www.youtube.com/watch?v=${video.videoId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block"
+                >
+                  <Card className="border-0 shadow-md hover:shadow-xl transition-all duration-300 bg-white overflow-hidden">
+                    <div className="relative aspect-video w-full bg-black">
+                      <img
+                        src={`https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`}
+                        alt={video.title}
+                        loading="lazy"
+                        className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <span className="flex h-16 w-16 items-center justify-center rounded-full bg-author-accent text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                          <Play className="h-7 w-7 ml-1" fill="currentColor" />
+                        </span>
+                      </div>
+                    </div>
+                    {(video.title || video.caption) && (
+                      <CardContent className="p-6 text-center">
+                        <p className="font-raleway font-semibold text-author-primary">{video.title}</p>
+                        {video.caption && (
+                          <p className="text-sm text-author-text-light mt-1">{video.caption}</p>
+                        )}
+                        <p className="mt-3 text-xs font-raleway uppercase tracking-wider text-author-accent">Watch on YouTube</p>
+                      </CardContent>
+                    )}
+                  </Card>
+                </a>
               ))}
             </div>
           )}
