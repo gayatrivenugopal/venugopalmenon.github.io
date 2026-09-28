@@ -128,7 +128,7 @@ const Index = () => {
   // or after "youtu.be/". Entries with an empty videoId are not rendered.
   const videoTestimonials = [
     {
-      videoId: "https://www.youtube.com/watch?v=iS_ZeN-vzXg",
+      videoId: "iS_ZeN-vzXg",
       title: "The Literary Clinic - Kalampedia",
       caption: "Reading Classic Malayalam Short Stories",
     },
