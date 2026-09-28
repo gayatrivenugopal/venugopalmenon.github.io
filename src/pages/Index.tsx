@@ -118,8 +118,8 @@ const Index = () => {
       quote: "These stories are emblematic of a simpler past and hence, such stories need to be remembered time and again.",
       author: "Jubi C John",
       position: "Ph.D. scholar, Department of English, Jamia Millia Islamia",
-      institutionUrl: "https://www.newindianexpress.com/cities/kochi/2019/Jul/03/casting-a-timeless-spell-1998523.html",
-      institution: "The New Indian Express",
+      institutionUrl: "#",
+      institution: "The Book Review",
     }
   ];
 
