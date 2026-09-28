@@ -113,8 +113,26 @@ const Index = () => {
       position: "Author & Journalist",
       institutionUrl: "https://www.newindianexpress.com/cities/kochi/2019/Jul/03/casting-a-timeless-spell-1998523.html",
       institution: "The New Indian Express",
+    },
+	{
+      quote: "These stories are emblematic of a simpler past and hence, such stories need to be remembered time and again.",
+      author: "Jubi C John",
+      position: "Ph.D. scholar, Department of English, Jamia Millia Islamia",
+      institutionUrl: "https://www.newindianexpress.com/cities/kochi/2019/Jul/03/casting-a-timeless-spell-1998523.html",
+      institution: "The New Indian Express",
     }
   ];
+
+  // YouTube videos shown under "What Others Say".
+  // videoId is the part after "v=" in a YouTube link (youtube.com/watch?v=VIDEO_ID)
+  // or after "youtu.be/". Entries with an empty videoId are not rendered.
+  const videoTestimonials = [
+    {
+      videoId: "https://www.youtube.com/watch?v=iS_ZeN-vzXg",
+      title: "The Literary Clinic - Kalampedia",
+      caption: "Reading Classic Malayalam Short Stories",
+    },
+  ].filter((v) => v.videoId);
 
   const recentArticles = [
     {
@@ -320,6 +338,34 @@ const Index = () => {
               </Card>
             ))}
           </div>
+
+          {videoTestimonials.length > 0 && (
+            <div className="mt-16 grid grid-cols-1 gap-8 max-w-4xl mx-auto">
+              {videoTestimonials.map((video, index) => (
+                <Card key={index} className="border-0 shadow-md bg-white overflow-hidden">
+                  <div className="aspect-video w-full">
+                    <iframe
+                      className="w-full h-full"
+                      src={`https://www.youtube-nocookie.com/embed/${video.videoId}`}
+                      title={video.title}
+                      loading="lazy"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    />
+                  </div>
+                  {(video.title || video.caption) && (
+                    <CardContent className="p-6 text-center">
+                      <p className="font-raleway font-semibold text-author-primary">{video.title}</p>
+                      {video.caption && (
+                        <p className="text-sm text-author-text-light mt-1">{video.caption}</p>
+                      )}
+                    </CardContent>
+                  )}
+                </Card>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
