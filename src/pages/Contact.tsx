@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Mail } from "lucide-react";
 
 // TODO: replace with your real email address
-const CONTACT_EMAIL = "your-email@example.com";
+const CONTACT_EMAIL = "menonvenum@gmail.com";
 
 const Contact = () => {
   return (
